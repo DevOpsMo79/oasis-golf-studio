@@ -1,0 +1,100 @@
+You are a senior full-stack developer and UI designer.
+
+I want to build a premium marketing website for “Oasis Golf Studio (OGS)” in Riyadh, Saudi Arabia.
+This is a serious indoor golf performance studio (TrackMan-powered), not an arcade or bar.
+
+IMPORTANT CONTEXT
+- Use the structure and page flow inspired by modern indoor golf studios (e.g. sections like: Hero, How It Works, Rates, Memberships, Lessons, Events, FAQ, Contact).
+- Do NOT copy any code, text, styling, or class names from other websites.
+- Recreate the structure and UX patterns only, using original copy and clean modern design.
+
+TECH STACK
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- No backend / no database
+- Content stored in a single file (e.g. /content/siteContent.ts)
+- Optimized for Replit preview + later deployment
+
+PAGES TO BUILD
+1) Home (/)
+   Sections:
+   - Hero (headline + subheadline + CTAs)
+   - “Bringing the outdoors indoors” style value proposition (original copy)
+   - How It Works (3 steps)
+   - Services overview (Practice / Coaching / Fitting)
+   - Membership teaser
+   - Events & leagues teaser
+   - CTA banner
+   - Footer
+
+2) How It Works (/how-it-works)
+   - Step-by-step experience
+   - Booking → Arrival → Play → Improve
+   - Emphasize automation & ease of use
+
+3) Rates (/rates)
+   - Hourly bay pricing cards
+   - Peak / off-peak placeholders
+   - No real prices yet (use “From SAR ___”)
+
+4) Memberships (/memberships)
+   - Tiered membership cards
+   - Practice-focused positioning
+   - CTA: Register Interest
+
+5) Lessons & Coaching (/lessons)
+   - Private coaching
+   - Junior programs
+   - Elite amateur development
+   - “Coaches coming soon” messaging
+
+6) Events & Leagues (/events)
+   - Corporate events
+   - Private bookings
+   - League play
+   - Original league naming (not Pace Scramble)
+
+7) FAQ (/faq)
+   - Common questions about booking, clubs, skill level, hours
+
+8) Contact (/contact)
+   - Contact form (console.log on submit)
+   - WhatsApp placeholder
+   - Riyadh location placeholder
+   - Google Map embed placeholder
+
+DESIGN SYSTEM
+- Dark premium background (charcoal / near-black)
+- Oasis green accent
+- Clean, modern sans-serif typography
+- Minimal animations
+- Golf-tech, premium, calm (not flashy)
+
+COMPONENTS
+- Layout (Navbar + Footer)
+- Button (primary / secondary)
+- Section wrapper
+- Card
+- PricingCard
+- CTA banner
+
+SEO / META
+- Proper page titles & descriptions
+- OpenGraph tags
+- robots.txt + sitemap
+- LocalBusiness schema (placeholder address)
+
+DELIVERABLE
+- Fully working Next.js project
+- Clear folder structure
+- README with:
+  - How to run
+  - Where to edit content
+  - What to replace later (logo, prices, booking links)
+
+DO NOT:
+- Add authentication
+- Add payment
+- Add CMS
+- Over-engineer
