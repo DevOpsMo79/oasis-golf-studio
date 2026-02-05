@@ -23,7 +23,7 @@ export default function Home() {
             >
               <h2 className="text-primary font-bold tracking-wider uppercase mb-4">Welcome to Oasis</h2>
               <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight mb-6">
-                Bringing the <span className="text-gradient-green">Outdoors</span> <br/> Indoors.
+                Bringing the <span className="text-gradient-orange">Outdoors</span> <br/> Indoors.
               </h1>
               <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
                 Experience the world's finest courses with industry-leading precision technology. Rain or shine, your game never stops.
