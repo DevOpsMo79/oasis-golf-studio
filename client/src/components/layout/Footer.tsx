@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Twitter, MapPin, Mail, Phone } from "lucide-react";
-import logoArb from "@assets/OGS_Brandin_Logo_v2.6_Arb_1770299283033.png";
+import logoArb from "@assets/OGS_Brandin_Logo_v2.5_Arb_1770557429156.png";
 
 export function Footer() {
   return (

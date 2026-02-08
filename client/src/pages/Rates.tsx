@@ -1,7 +1,7 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { Clock, Users, Zap, Star } from "lucide-react";
-import heroImg from "@assets/e03a29495a0f94a4a5147e16f5d2265c_1770299247760.jpg";
+import heroImg from "@assets/f336f5e1..._1770557490536.jpg";
 
 const PEAK_HOURS = {
   weekdays: [

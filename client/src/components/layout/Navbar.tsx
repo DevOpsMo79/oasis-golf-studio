@@ -2,7 +2,7 @@ import { Link, useLocation } from "wouter";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logoEng from "@assets/OGS_Brandin_Logo_v2.6_Eng_1770299283034.png";
+import logoEng from "@assets/OGS_Brandin_Logo_v2.5_Eng_1770557429157.png";
 
 const navItems = [
   { label: "Home", href: "/" },

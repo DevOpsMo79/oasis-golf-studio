@@ -1,0 +1,68 @@
+I’m going to upload several images now, including the official Oasis Golf Studio (OGS) logo.
+
+Task: Analyze the images and integrate them into the existing website in the most appropriate places based on each image’s theme and the page/section context.
+
+IMPORTANT RULES
+- Do NOT reinitialize the project.
+- Do NOT change the framework, routing, or overall design system.
+- Do NOT remove existing sections; only enhance by adding images where they fit.
+- Do NOT redesign the site.
+- Use original placement decisions based on image content; do not ask me questions unless absolutely necessary.
+- Optimize for performance and responsiveness.
+
+LOGO UPDATE (IMPORTANT)
+- One of the uploaded images is the official OGS logo.
+- Replace the existing logo in:
+  - The main navigation (desktop and mobile)
+  - The footer (if present)
+- Preserve existing logo sizing, alignment, and layout.
+- If the uploaded logo has a transparent background, keep it transparent.
+- If both light and dark versions are provided:
+  - Use the light logo on dark backgrounds
+  - Use the dark logo on light backgrounds
+- Store the logo in the project’s public assets directory and reference it consistently.
+
+WORKFLOW
+1) Scan the current codebase and list:
+   - All pages/routes
+   - Key sections within each page (hero, feature sections, pricing, coaching, events, FAQ, contact, etc.)
+2) Analyze each uploaded image and classify it into one of these categories:
+   - Hero / Brand mood
+   - Facility / Bays / Tech
+   - Coaching / Instruction
+   - Club fitting / Equipment
+   - Coffee lounge / Lifestyle
+   - Events / Groups / Corporate
+   - Background texture / Decorative
+3) Create a mapping table:
+   - image filename → category → target page → target section → usage type (hero background, inline image, gallery card, etc.)
+4) Implement the mapping in code.
+
+IMPLEMENTATION REQUIREMENTS
+- Put images in /public/images (or the existing assets directory).
+- Use Next.js <Image> wherever possible.
+- Ensure all images are responsive and mobile-friendly.
+- Add accurate alt text for SEO.
+- Avoid visual clutter; keep the site premium and clean.
+
+PLACEMENT GUIDELINES
+- Home: one premium hero image + limited supporting images
+- How it works: tech/self-service imagery if available
+- Rates: subtle bay or tech image
+- Memberships: lifestyle/community image
+- Coaching: instruction image
+- Events: group/corporate image
+- Contact: facility/location vibe image
+
+QUALITY CONTROLS
+- Do not use low-resolution images as hero images.
+- Do not force all images to be used; leave unsuitable images unused.
+- Keep contrast and readability of text over images.
+
+DELIVERABLE
+- Implement all image and logo updates.
+- Provide a summary of:
+  - Where each image was placed
+  - Where the logo was updated
+  - Which images were not used (and why)
+- List modified files only.

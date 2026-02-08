@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight, Target, Users, Trophy, Calendar } from "lucide-react";
-import heroImg from "@assets/e03a29495a0f94a4a5147e16f5d2265c_1770299247760.jpg";
-import interiorImg from "@assets/PGAWest_GolfAcademy_TaraHoward-29-scaled_1770299247761.jpg";
+import heroImg from "@assets/IMG-20250730-WA0016_1770557490533.jpg";
+import interiorImg from "@assets/0a904082e9334b50a9b008a80e13a5d9_1770557490535.jpg";
 
 export default function Home() {
   return (
