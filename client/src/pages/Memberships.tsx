@@ -7,14 +7,14 @@ export default function Memberships() {
   const tiers = [
     {
       name: "Birdie",
-      price: "1,500",
+      price: "999",
       period: "month",
-      description: "Perfect for the casual player looking to improve.",
+      description: "Ideal for consistent practice and skill development.",
       features: [
-        "5 hours of simulator time per month",
-        "10% off food & beverages",
-        "Priority booking window (3 days)",
-        "Free equipment storage"
+        "Digital app-based access",
+        "Performance data tracking",
+        "Climate-controlled environment",
+        "Priority booking access"
       ],
       highlight: false
     },
@@ -53,7 +53,7 @@ export default function Memberships() {
     <div className="min-h-screen pb-24">
       <PageHeader 
         title="Memberships" 
-        description="Join the club. Unlock exclusive benefits and consistent practice time."
+        description="Starting from SAR 999 / month. Join Riyadh's performance-focused golf community."
         image={interiorImg}
       />
 
@@ -101,7 +101,7 @@ export default function Memberships() {
                       : "bg-white/10 text-white hover:bg-white/20"
                   }`}
                 >
-                  {tier.highlight ? "Join Now" : "Select Plan"}
+                  Register Interest
                 </button>
               </Link>
             </div>

@@ -21,12 +21,12 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-primary font-bold tracking-wider uppercase mb-4">Welcome to Oasis</h2>
+              <h2 className="text-primary font-bold tracking-wider uppercase mb-4">Riyadh's Premier Performance Studio</h2>
               <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight mb-6">
                 Bringing the <span className="text-gradient-orange">Outdoors</span> <br/> Indoors.
               </h1>
               <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
-                Experience the world's finest courses with industry-leading precision technology. Rain or shine, your game never stops.
+                Oasis Golf Studio is Riyadh’s first premium indoor golf performance studio, powered by TrackMan technology. Experience climate-controlled, professional-grade practice in a self-service, digitally managed space aligned with the Kingdom's Vision 2030.
               </p>
             </motion.div>
 
@@ -67,24 +67,24 @@ export default function Home() {
             </motion.div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-display font-bold">Precision Meets Luxury</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold">Performance First. Convenience Always.</h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                We've designed Oasis to be more than just a practice facility. It's a sanctuary for golfers. 
-                Whether you're grinding on your swing data, playing 18 holes at Pebble Beach with friends, 
-                or getting fit for your next driver, our premium bays offer the privacy and technology you need.
+                Oasis is designed for serious golfers who value performance, convenience, and community. 
+                Our self-service, app-based access allows you to practice on your own terms in a climate-controlled sanctuary. 
+                From professional-grade simulator bays to a boutique coffee lounge, Oasis is Riyadh's new home for golf excellence.
               </p>
               <ul className="space-y-4 pt-4">
                 <li className="flex items-center gap-3">
                   <div className="p-2 rounded-full bg-primary/10 text-primary"><Target className="w-5 h-5" /></div>
-                  <span className="font-medium">TrackMan 4 Technology</span>
+                  <span className="font-medium">2 Open TrackMan iO Bays</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="p-2 rounded-full bg-primary/10 text-primary"><Users className="w-5 h-5" /></div>
-                  <span className="font-medium">Private & Social Bays</span>
+                  <span className="font-medium">1 Private VIP TrackMan 4 Bay</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="p-2 rounded-full bg-primary/10 text-primary"><Trophy className="w-5 h-5" /></div>
-                  <span className="font-medium">Monthly Tournaments</span>
+                  <span className="font-medium">1 Coaching TrackMan iO Bay</span>
                 </li>
               </ul>
             </div>
