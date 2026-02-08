@@ -42,7 +42,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link href="/" className="relative z-50">
-          <img src={logoEng} alt="Oasis Golf Simulator" className="h-12 w-auto object-contain" />
+          <img src={logoEng} alt="Oasis Golf Studio" className="h-12 w-auto object-contain" />
         </Link>
 
         {/* Desktop Navigation */}

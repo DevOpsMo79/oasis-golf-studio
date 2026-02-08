@@ -55,7 +55,7 @@ export default function Contact() {
                 <div className="p-3 bg-card rounded-lg border border-white/10 text-primary"><MapPin className="w-6 h-6" /></div>
                 <div>
                   <h4 className="font-bold text-lg mb-1">Address</h4>
-                  <p className="text-muted-foreground">123 King Fahd Road<br/>Riyadh, Saudi Arabia</p>
+                  <p className="text-muted-foreground">Location being finalized</p>
                 </div>
               </div>
               
@@ -72,7 +72,7 @@ export default function Contact() {
                 <div className="p-3 bg-card rounded-lg border border-white/10 text-primary"><Mail className="w-6 h-6" /></div>
                 <div>
                   <h4 className="font-bold text-lg mb-1">Email</h4>
-                  <p className="text-muted-foreground">info@oasisgolf.sa</p>
+                  <p className="text-muted-foreground">info@oasisgolfstudio.com</p>
                 </div>
               </div>
             </div>

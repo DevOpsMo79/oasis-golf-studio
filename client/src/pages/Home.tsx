@@ -26,8 +26,26 @@ export default function Home() {
                 Bringing the <span className="text-gradient-orange">Outdoors</span> <br/> Indoors.
               </h1>
               <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
-                Oasis Golf Studio is Riyadh’s first premium indoor golf performance studio, powered by TrackMan technology. Experience climate-controlled, professional-grade practice in a self-service, digitally managed space aligned with the Kingdom's Vision 2030.
+                Oasis Golf Studio is Riyadh’s first premium indoor golf performance studio, powered by TrackMan technology. Experience climate-controlled, professional-grade practice and play in a self-service, digitally managed space. Our facility offers:
               </p>
+              <ul className="mt-6 space-y-2 text-muted-foreground text-lg">
+                <li className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  3 TrackMan iO Powered Open Bays
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  1 Trackman 4 Powered VIP/Coaching Bay
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  Club Fitting Services
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  Tiered Memberships
+                </li>
+              </ul>
             </motion.div>
 
             <motion.div 

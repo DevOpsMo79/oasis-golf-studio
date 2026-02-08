@@ -35,7 +35,7 @@ export const isPeak = (dayOfWeek: number, hour: number) => {
 
 export const getHourlyRate = (bayType: 'open' | 'vip', isPeakTime: boolean) => {
   if (bayType === 'vip') {
-    return isPeakTime ? 300 : 250;
+    return isPeakTime ? 250 : 200;
   }
   return isPeakTime ? 200 : 150;
 };
@@ -87,14 +87,14 @@ export default function Rates() {
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
                 <div>
                   <p className="font-bold text-lg">Peak Time</p>
-                  <p className="text-sm text-muted-foreground">SAR 300 / hour</p>
+                  <p className="text-sm text-muted-foreground">SAR 250 / hour</p>
                 </div>
                 <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold">PEAK</div>
               </div>
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
                 <div>
                   <p className="font-bold text-lg">Off-Peak Time</p>
-                  <p className="text-sm text-muted-foreground">SAR 250 / hour</p>
+                  <p className="text-sm text-muted-foreground">SAR 200 / hour</p>
                 </div>
                 <div className="bg-secondary text-muted-foreground px-3 py-1 rounded-full text-xs font-bold">OFF-PEAK</div>
               </div>
@@ -110,39 +110,31 @@ export default function Rates() {
         {/* Hour Definitions Grid */}
         <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto bg-card/50 p-8 rounded-3xl border border-white/5">
           <div>
-            <h4 className="text-xl font-bold font-display mb-4 text-primary">Peak Hour Definitions</h4>
+            <h4 className="text-xl font-bold font-display mb-4 text-primary">Peak Hours</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex justify-between">
                 <span className="text-muted-foreground">Weekdays:</span>
-                <span className="text-white">06:00-10:00 & 18:00-24:00</span>
+                <span className="text-white">06:00-09:00 & 17:00-01:00</span>
               </li>
               <li className="flex justify-between">
-                <span className="text-muted-foreground">Friday:</span>
-                <span className="text-white">06:00-10:00 & 16:00-24:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="text-muted-foreground">Saturday:</span>
-                <span className="text-white">06:00-24:00 (All Day)</span>
+                <span className="text-muted-foreground">Friday & Saturday:</span>
+                <span className="text-white">06:00-01:00 (All Day)</span>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="text-xl font-bold font-display mb-4 text-muted-foreground">Off-Peak Hour Definitions</h4>
+            <h4 className="text-xl font-bold font-display mb-4 text-muted-foreground">Off-Peak Hours</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex justify-between">
                 <span className="text-muted-foreground">Weekdays:</span>
-                <span className="text-white">10:00-18:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="text-muted-foreground">Friday:</span>
-                <span className="text-white">10:00-16:00</span>
+                <span className="text-white">09:00-17:00</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="text-center mt-12 text-muted-foreground max-w-2xl mx-auto">
-          <p className="text-sm">Oasis is Riyadh's first premium indoor golf performance studio. Digitally managed for ultimate convenience and performance tracking.</p>
+          <p className="text-sm">Oasis Golf Studio is Riyadh's first premium indoor golf performance studio. Digitally managed for ultimate convenience and performance tracking.</p>
         </div>
       </div>
     </div>

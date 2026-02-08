@@ -6,11 +6,26 @@ import interiorImg from "@assets/PGAWest_GolfAcademy_TaraHoward-29-scaled_177029
 export default function Memberships() {
   const tiers = [
     {
+      name: "Par",
+      price: "799",
+      period: "month",
+      description: "Great entry point for consistent improvement.",
+      features: [
+        "SAR 50/OFF Per Hour",
+        "7-Day Advanced Booking",
+        "League Discount Fee",
+        "Exclusive Giveaways & Events",
+        "And more..."
+      ],
+      highlight: false
+    },
+    {
       name: "Birdie",
       price: "999",
       period: "month",
       description: "Ideal for consistent practice and skill development.",
       features: [
+        "14-Day Advanced Booking",
         "Digital app-based access",
         "Performance data tracking",
         "Climate-controlled environment",
@@ -20,13 +35,13 @@ export default function Memberships() {
     },
     {
       name: "Eagle",
-      price: "2,800",
+      price: "1,299",
       period: "month",
       description: "For the dedicated golfer who wants serious results.",
       features: [
+        "21-Day Advanced Booking",
         "12 hours of simulator time per month",
         "15% off food & beverages",
-        "Priority booking window (7 days)",
         "Free equipment storage",
         "1 free guest per session"
       ],
@@ -34,14 +49,14 @@ export default function Memberships() {
     },
     {
       name: "Albatross",
-      price: "5,000",
+      price: "1,499",
       period: "month",
       description: "The ultimate unlimited experience for VIPs.",
       features: [
+        "30-Day Advanced Booking",
         "Unlimited simulator time (off-peak)",
         "20 hours peak time per month",
         "20% off food & beverages",
-        "Priority booking window (14 days)",
         "VIP locker included",
         "Unlimited guests"
       ],
@@ -58,7 +73,7 @@ export default function Memberships() {
       />
 
       <div className="container px-4 md:px-6 py-16">
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {tiers.map((tier) => (
             <div 
               key={tier.name}

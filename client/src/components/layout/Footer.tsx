@@ -7,11 +7,10 @@ export function Footer() {
     <footer className="bg-card border-t border-white/5 pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Brand */}
           <div className="space-y-6">
-            <img src={logoArb} alt="Oasis Golf Simulator Arabic Logo" className="h-16 w-auto opacity-90" />
+            <img src={logoArb} alt="Oasis Golf Studio Arabic Logo" className="h-16 w-auto opacity-90" />
             <p className="text-muted-foreground leading-relaxed">
-              Bringing the outdoors indoors. Experience premium golf simulation technology in a relaxed, sophisticated atmosphere.
+              Oasis Golf Studio is Riyadh's first premium indoor golf performance studio. Bringing the outdoors indoors.
             </p>
             <div className="flex gap-4">
               <a href="#" className="p-2 rounded-full bg-secondary hover:bg-primary/20 hover:text-primary transition-colors">
@@ -62,14 +61,14 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>info@oasisgolf.sa</span>
+                <span>info@oasisgolfstudio.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Oasis Golf Simulator. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Oasis Golf Studio. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-foreground">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-foreground">Terms of Service</Link>

@@ -14,7 +14,7 @@ export default function FAQ() {
     },
     {
       question: "Is the simulator accurate?",
-      answer: "Yes. We use TrackMan 4 technology, which is the industry standard used by tour professionals. It uses dual-radar technology to track both the club and ball data with incredible precision."
+      answer: "Yes. We use TrackMan technology, which is the industry standard used by tour professionals. It uses dual-radar technology to track both the club and ball data with incredible precision."
     },
     {
       question: "Can I wear golf shoes?",
