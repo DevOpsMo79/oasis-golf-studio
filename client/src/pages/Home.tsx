@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowRight, Target, Users, Trophy, Calendar } from "lucide-react";
+import { ArrowRight, Target, Users, Trophy, Calendar, CheckCircle2 } from "lucide-react";
 import heroImg from "@assets/IMG-20250730-WA0016_1770557490533.jpg";
 import interiorImg from "@assets/0a904082e9334b50a9b008a80e13a5d9_1770557490535.jpg";
+import trackmanImg from "@assets/431ca75328a44fe587fde37bbb3b4829_1770557490535.jpg";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <section className="relative h-screen min-h-[600px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src={heroImg} alt="Golf Simulator" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-background/70 bg-gradient-to-r from-background via-background/80 to-transparent" />
+          <div className="absolute inset-0 bg-background/50 bg-gradient-to-r from-background via-background/60 to-transparent" />
         </div>
 
         <div className="container relative z-10 px-4 md:px-6">
@@ -21,28 +22,28 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-primary font-bold tracking-wider uppercase mb-4">Riyadh's Premier Performance Studio</h2>
               <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight mb-6">
                 Bringing the <span className="text-gradient-orange">Outdoors</span> <br/> Indoors.
               </h1>
               <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
-                Oasis Golf Studio is Riyadh’s first premium indoor golf performance studio, powered by TrackMan technology. Experience climate-controlled, professional-grade practice and play in a self-service, digitally managed space. Our facility offers:
+                Oasis Golf Studio is Riyadh’s first premium indoor golf studio, powered by TrackMan technology. Designed for serious golfers who value performance, convenience, and community, our self-service, app-based access lets you practice and/or play on your own terms in a climate-controlled, professional-grade, digitally managed space.
               </p>
-              <ul className="mt-6 space-y-2 text-muted-foreground text-lg">
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                  3 TrackMan iO Powered Open Bays
+              <h3 className="text-xl font-bold mt-8 mb-4 text-white font-display">Our facility offers:</h3>
+              <ul className="space-y-3 text-muted-foreground text-lg">
+                <li className="flex items-center gap-3">
+                  <div className="p-1 rounded-full bg-primary/20 text-primary"><Target className="w-5 h-5" /></div>
+                  3 TrackMan iO-Powered Open Bays
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                  1 Trackman 4 Powered VIP/Coaching Bay
+                <li className="flex items-center gap-3">
+                  <div className="p-1 rounded-full bg-primary/20 text-primary"><Target className="w-5 h-5" /></div>
+                  1 TrackMan 4-Powered Private Bay
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <li className="flex items-center gap-3">
+                  <div className="p-1 rounded-full bg-primary/20 text-primary"><Target className="w-5 h-5" /></div>
                   Club Fitting Services
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <li className="flex items-center gap-3">
+                  <div className="p-1 rounded-full bg-primary/20 text-primary"><Target className="w-5 h-5" /></div>
                   Tiered Memberships
                 </li>
               </ul>
@@ -64,6 +65,62 @@ export default function Home() {
                   How It Works <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why TrackMan Section */}
+      <section className="py-24 bg-card/50 relative overflow-hidden border-y border-white/5">
+        <div className="container px-4 md:px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <h2 className="text-3xl md:text-5xl font-display font-bold">Why TrackMan</h2>
+              <div className="grid gap-6">
+                <div className="flex gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold text-xl mb-1">Tour-Proven Accuracy</h4>
+                    <p className="text-muted-foreground">The industry standard used by 90% of the world's best players for pinpoint precision tracking.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold text-xl mb-1">No Markers Needed</h4>
+                    <p className="text-muted-foreground">Advanced dual-radar technology tracks club and ball data without the need for markers.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold text-xl mb-1">TrackMan Golf App</h4>
+                    <p className="text-muted-foreground">Every shot is saved to your personal profile for instant review on your phone anytime.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold text-xl mb-1">Practice with Purpose</h4>
+                    <p className="text-muted-foreground">Improve faster with Shot Analysis and Combine-style challenges built into the system.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold text-xl mb-1">150+ World-Class Courses</h4>
+                    <p className="text-muted-foreground">Play stunningly accurate renders of the world's most famous venues.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10"
+            >
+              <img src={trackmanImg} alt="TrackMan Technology" className="w-full h-auto" />
             </motion.div>
           </div>
         </div>

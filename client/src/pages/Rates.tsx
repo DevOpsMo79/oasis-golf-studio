@@ -53,21 +53,19 @@ export default function Rates() {
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Open Bay Rates */}
           <div className="bg-card rounded-2xl p-8 shadow-xl border border-white/5 hover:border-primary/30 transition-all duration-300">
-            <h3 className="text-2xl font-bold font-display text-white mb-6">Open TrackMan iO Bays</h3>
+            <h3 className="text-2xl font-bold font-display text-white mb-6">TrackMan iO-Powered Open Bays</h3>
             <div className="space-y-6">
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
                 <div>
-                  <p className="font-bold text-lg">Peak Time</p>
-                  <p className="text-sm text-muted-foreground">SAR 200 / hour</p>
+                  <p className="font-bold text-lg">SAR 200 / hour</p>
                 </div>
-                <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold">PEAK</div>
+                <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Peak</div>
               </div>
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
                 <div>
-                  <p className="font-bold text-lg">Off-Peak Time</p>
-                  <p className="text-sm text-muted-foreground">SAR 150 / hour</p>
+                  <p className="font-bold text-lg">SAR 150 / hour</p>
                 </div>
-                <div className="bg-secondary text-muted-foreground px-3 py-1 rounded-full text-xs font-bold">OFF-PEAK</div>
+                <div className="bg-secondary text-muted-foreground px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Off-Peak</div>
               </div>
             </div>
             <Link href="/contact" className="block mt-8">
@@ -82,21 +80,19 @@ export default function Rates() {
             <div className="absolute top-0 right-0 p-4">
               <Star className="text-primary w-6 h-6 fill-primary" />
             </div>
-            <h3 className="text-2xl font-bold font-display text-white mb-6">Private VIP TrackMan 4 Bay</h3>
+            <h3 className="text-2xl font-bold font-display text-white mb-6">TrackMan 4-Powered Private Bay</h3>
             <div className="space-y-6">
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
                 <div>
-                  <p className="font-bold text-lg">Peak Time</p>
-                  <p className="text-sm text-muted-foreground">SAR 250 / hour</p>
+                  <p className="font-bold text-lg">SAR 300 / hour</p>
                 </div>
-                <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold">PEAK</div>
+                <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Peak</div>
               </div>
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
                 <div>
-                  <p className="font-bold text-lg">Off-Peak Time</p>
-                  <p className="text-sm text-muted-foreground">SAR 200 / hour</p>
+                  <p className="font-bold text-lg">SAR 250 / hour</p>
                 </div>
-                <div className="bg-secondary text-muted-foreground px-3 py-1 rounded-full text-xs font-bold">OFF-PEAK</div>
+                <div className="bg-secondary text-muted-foreground px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Off-Peak</div>
               </div>
             </div>
             <Link href="/contact" className="block mt-8">
@@ -114,11 +110,11 @@ export default function Rates() {
             <ul className="space-y-3 text-sm">
               <li className="flex justify-between">
                 <span className="text-muted-foreground">Weekdays:</span>
-                <span className="text-white">06:00-09:00 & 17:00-01:00</span>
+                <span className="text-white">6 AM – 9 AM & 5 PM – 1 AM</span>
               </li>
               <li className="flex justify-between">
                 <span className="text-muted-foreground">Friday & Saturday:</span>
-                <span className="text-white">06:00-01:00 (All Day)</span>
+                <span className="text-white">6 AM – 1 AM (All Day)</span>
               </li>
             </ul>
           </div>
@@ -127,7 +123,7 @@ export default function Rates() {
             <ul className="space-y-3 text-sm">
               <li className="flex justify-between">
                 <span className="text-muted-foreground">Weekdays:</span>
-                <span className="text-white">09:00-17:00</span>
+                <span className="text-white">9 AM – 5 PM</span>
               </li>
             </ul>
           </div>

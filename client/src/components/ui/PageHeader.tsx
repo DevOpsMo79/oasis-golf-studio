@@ -13,7 +13,7 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
       {image && (
         <div className="absolute inset-0 z-0">
           <img src={image} alt={title} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-background/80 bg-gradient-to-t from-background to-background/40" />
+          <div className="absolute inset-0 bg-background/50 bg-gradient-to-t from-background to-background/20" />
         </div>
       )}
       

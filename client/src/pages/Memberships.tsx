@@ -6,56 +6,59 @@ import interiorImg from "@assets/IMG-20250730-WA0014_1770557490533.jpg";
 export default function Memberships() {
   const tiers = [
     {
-      name: "Par",
-      price: "799",
+      name: "PAR",
+      price: "699",
       period: "month",
       description: "Great entry point for consistent improvement.",
       features: [
-        "SAR 50/OFF Per Hour",
         "7-Day Advanced Booking",
-        "League Discount Fee",
-        "Exclusive Giveaways & Events",
-        "And more..."
+        "3 off-peak hours simulator time included",
+        "3 peak hours simulator time included",
+        "15% off food & beverages",
+        "Free equipment storage",
+        "3 free guests per month"
       ],
       highlight: false
     },
     {
-      name: "Birdie",
+      name: "BIRDIE",
       price: "999",
       period: "month",
       description: "Ideal for consistent practice and skill development.",
       features: [
         "14-Day Advanced Booking",
-        "Digital app-based access",
-        "Performance data tracking",
-        "Climate-controlled environment",
-        "Priority booking access"
+        "5 off-peak hours simulator time included",
+        "5 peak hours simulator time included",
+        "15% off food & beverages",
+        "Free equipment storage",
+        "5 free guests per month"
       ],
       highlight: false
     },
     {
-      name: "Eagle",
-      price: "1,299",
+      name: "EAGLE",
+      price: "1,399",
       period: "month",
       description: "For the dedicated golfer who wants serious results.",
       features: [
         "21-Day Advanced Booking",
-        "12 hours of simulator time per month",
+        "10 off-peak hours simulator time included",
+        "10 peak hours simulator time included",
         "15% off food & beverages",
         "Free equipment storage",
-        "1 free guest per session"
+        "10 free guests per month"
       ],
       highlight: true
     },
     {
-      name: "Albatross",
-      price: "1,499",
+      name: "ALBATROSS",
+      price: "1,799",
       period: "month",
       description: "The ultimate unlimited experience for VIPs.",
       features: [
         "30-Day Advanced Booking",
-        "Unlimited simulator time (off-peak)",
-        "20 hours peak time per month",
+        "Unlimited off-peak hours simulator time included",
+        "15 peak hours simulator time included",
         "20% off food & beverages",
         "VIP locker included",
         "Unlimited guests"
@@ -68,11 +71,16 @@ export default function Memberships() {
     <div className="min-h-screen pb-24">
       <PageHeader 
         title="Memberships" 
-        description="Starting from SAR 999 / month. Join Riyadh's performance-focused golf community."
+        description="Join Riyadh's premium performance-focused golf community."
         image={interiorImg}
       />
 
       <div className="container px-4 md:px-6 py-16">
+        <div className="mb-12 text-center">
+          <p className="text-primary font-bold text-xl inline-block px-6 py-2 rounded-full bg-primary/10 border border-primary/20">
+            All members get SAR 50 OFF per hour.
+          </p>
+        </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {tiers.map((tier) => (
             <div 
