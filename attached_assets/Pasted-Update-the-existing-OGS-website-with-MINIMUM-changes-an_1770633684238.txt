@@ -1,0 +1,110 @@
+Update the existing OGS website with MINIMUM changes and MINIMUM code churn.
+DO NOT reinitialize the project. DO NOT change the framework, routing, or global styling system.
+Only touch the files necessary to implement the changes below.
+
+GLOBAL RULES
+1) Make all background images more visible (currently too dim). Reduce the dark overlay/opacity and ensure text remains readable. Do this via ONE reusable style/utility (e.g., a single CSS/Tailwind class or a shared component prop), not per-page hacks.
+2) Never use the word “Oasis” by itself. Always write “Oasis Golf Studio” in sentences and headings.
+3) I will attach images + the official logo. Add them to /public/images (or current assets folder) and use Next.js <Image> where applicable.
+4) Add TrackMan content (text + select images) from the two uploaded PDFs into relevant sections, but keep it customer-relevant and concise (no walls of text). Use original phrasing (paraphrase) and do not copy large blocks verbatim.
+
+A) HOME PAGE CHANGES
+1) Remove the orange text “Riyadh’s Premier Performance Studio”.
+2) Rework the hero copy to avoid redundancy and use this structure (rewrite cleanly, do not paste verbatim):
+   Headline:
+   “Bringing the Outdoors Indoors.”
+   Body:
+   “Oasis Golf Studio is Riyadh’s first premium indoor golf studio, powered by TrackMan technology. Designed for serious golfers who value performance, convenience, and community, our self-service, app-based access lets you practice and/or play on your own terms in a climate-controlled, professional-grade, digitally managed space.”
+   Then:
+   “Our facility offers:”
+   - 3 TrackMan iO-Powered Open Bays
+   - 1 TrackMan 4-Powered Private Bay
+   - Club Fitting Services
+   - Tiered Memberships
+3) Use icon bullets similar to the icons I attached (target /features section). Reuse the existing icon style in the site (do not introduce a new icon library unless one already exists).
+
+B) RATES PAGE CHANGES
+1) Rename headings:
+   - “Open TrackMan iO Bays” -> “TrackMan iO-Powered Open Bays”
+   - “Private VIP TrackMan 4 Bay” -> “TrackMan 4-Powered Private Bay”
+2) Replace the text labels “Peak Time” and “Off-Peak Time” with the colored pill/badge style already used on the right (use badges only; no duplicated text label).
+3) Update time formatting:
+   - Remove “:00”
+   - Use AM/PM instead of 24h format
+   Example: “6 AM – 10 AM” instead of “06:00–10:00”
+4) Ensure the VIP pricing is correct:
+   Peak: SAR 300 / hour
+   Off-Peak: SAR 250 / hour
+   (Do not use the older incorrect numbers shown in screenshots.)
+
+C) MEMBERSHIPS PAGE (FULL UPDATE)
+1) Add a visible note near the pricing/cards:
+   “All members get SAR 50 OFF per hour.”
+2) Replace membership tiers with exactly these 4 tiers and benefits (format as clean cards):
+
+PAR
+- Great entry point for consistent improvement.
+- SAR 699 / month
+- 7-Day Advanced Booking
+- 3 off-peak hours simulator time included
+- 3 peak hours simulator time included
+- 15% off food & beverages
+- Free equipment storage
+- 3 free guests per month
+
+BIRDIE
+- Ideal for consistent practice and skill development.
+- SAR 999 / month
+- 14-Day Advanced Booking
+- 5 off-peak hours simulator time included
+- 5 peak hours simulator time included
+- 15% off food & beverages
+- Free equipment storage
+- 5 free guests per month
+
+EAGLE
+- For the dedicated golfer who wants serious results.
+- SAR 1,399 / month
+- 21-Day Advanced Booking
+- 10 off-peak hours simulator time included
+- 10 peak hours simulator time included
+- 15% off food & beverages
+- Free equipment storage
+- 10 free guests per month
+
+ALBATROSS
+- The ultimate unlimited experience for VIPs.
+- SAR 1,799 / month
+- 30-Day Advanced Booking
+- Unlimited off-peak hours simulator time included
+- 15 peak hours simulator time included
+- 20% off food & beverages
+- VIP locker included
+- Unlimited guests
+
+D) IMAGES + LOGO
+1) Identify the attached official OGS logo and replace the logo in:
+   - Navbar (desktop + mobile)
+   - Footer (if present)
+2) Place the attached facility images where they fit best:
+   - Home hero/background: use the best “facility vibe” image, but keep it bright enough (less dim overlay).
+   - Rates: subtle bay image near the top (optional).
+   - Memberships: community/lifestyle image (optional).
+3) Add correct alt text for each image.
+
+E) TRACKMAN CUSTOMER-RELEVANT CONTENT (FROM PDFs)
+Use the TrackMan PDFs to add ONE concise section (not a whole page) on Home or How-It-Works titled like:
+“Why TrackMan”
+Include 4–6 short bullets covering customer value, such as:
+- Tour-proven tracking and accuracy
+- No markers needed on ball or club
+- Data saved and viewable in the TrackMan Golf app
+- Practice tools (Shot Analysis / Combine-style challenges)
+- 150+ courses for on-course play (if you mention a number, keep it generic like “150+”)
+Use 1–2 relevant images from the PDFs as supporting visuals (do not overuse).
+
+IMPLEMENTATION NOTES
+- Prefer editing existing components and content files rather than rewriting pages.
+- If content lives in a central content file, update it there.
+- Keep the design consistent. No new layouts.
+- When done: output a short summary listing what changed and which files were modified.
