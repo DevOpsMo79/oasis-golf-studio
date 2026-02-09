@@ -1,6 +1,6 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { CheckCircle2, CalendarCheck, MapPin, PlayCircle, TrendingUp } from "lucide-react";
-import interiorImg from "@assets/431ca75328a44fe587fde37bbb3b4829_1770557490535.jpg";
+import interiorImg from "@assets/image_1770635465046.png";
 
 export default function HowItWorks() {
   const steps = [

@@ -1,7 +1,7 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { Check } from "lucide-react";
-import interiorImg from "@assets/IMG-20250730-WA0014_1770557490533.jpg";
+import interiorImg from "@assets/image_1770635519225.png";
 
 export default function Memberships() {
   const tiers = [
