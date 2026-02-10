@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight, Target, Users, Trophy, Calendar, CheckCircle2 } from "lucide-react";
+import { IMAGE_PLACEHOLDER_MODE } from "@/lib/config";
+import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import heroImg from "@assets/IMG-20250730-WA0016_1770557490533.jpg";
 import interiorImg from "@assets/0a904082e9334b50a9b008a80e13a5d9_1770557490535.jpg";
 import trackmanImg from "@assets/431ca75328a44fe587fde37bbb3b4829_1770557490535.jpg";
@@ -120,7 +122,11 @@ export default function Home() {
               viewport={{ once: true }}
               className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10"
             >
-              <img src={trackmanImg} alt="TrackMan Technology" className="w-full h-auto" />
+              {IMAGE_PLACEHOLDER_MODE ? (
+                <ImagePlaceholder id={2} section="Why TrackMan Section" className="aspect-video" />
+              ) : (
+                <img src={trackmanImg} alt="TrackMan Technology" className="w-full h-auto" />
+              )}
             </motion.div>
           </div>
         </div>
@@ -137,7 +143,11 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10"
             >
-              <img src={interiorImg} alt="Interior Lounge" className="w-full h-auto" />
+              {IMAGE_PLACEHOLDER_MODE ? (
+                <ImagePlaceholder id={1} section="Interior Lounge Section" className="aspect-video" />
+              ) : (
+                <img src={interiorImg} alt="Interior Lounge" className="w-full h-auto" />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
             </motion.div>
 

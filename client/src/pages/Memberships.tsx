@@ -73,6 +73,7 @@ export default function Memberships() {
         title="Memberships" 
         description="Join Riyadh's premium performance-focused golf community."
         image={interiorImg}
+        placeholderId={4}
       />
 
       <div className="container px-4 md:px-6 py-16">

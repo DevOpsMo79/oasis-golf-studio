@@ -47,6 +47,7 @@ export default function Rates() {
         title="Rates & Access" 
         description="Premium TrackMan iO and TrackMan 4 simulator bays. Self-service, digitally managed performance space."
         image={heroImg}
+        placeholderId={3}
       />
 
       <div className="container px-4 md:px-6 -mt-20 relative z-10">

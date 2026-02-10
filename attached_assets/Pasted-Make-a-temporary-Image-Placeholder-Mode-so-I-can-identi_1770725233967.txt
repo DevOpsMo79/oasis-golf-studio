@@ -1,0 +1,41 @@
+Make a temporary “Image Placeholder Mode” so I can identify every image location on the site.
+
+CRITICAL RULES
+- Do NOT reinitialize the project.
+- Do NOT refactor or redesign pages.
+- Minimum code change: prefer adding ONE reusable wrapper component and replacing existing image usages with it.
+- Keep the current Home page theme/hero image exactly as-is (do not replace it).
+- For every other image on the site (page hero/theme images + inline images), replace the rendered image with a numbered placeholder box so I can see the numbers in the UI.
+
+WHAT TO BUILD
+1) Add a reusable component, e.g. `ImagePlaceholder` (or similar), that renders:
+   - A fixed-aspect placeholder (preserve the existing image container size/aspect ratio)
+   - A visible label centered on top: “IMG #01”, “IMG #02”, etc.
+   - Optionally, show a small caption at bottom: route + section name (if easily available), otherwise just the number.
+   - Keep rounded corners / shadow consistent with the design.
+
+2) Add a single config flag (e.g. `IMAGE_PLACEHOLDER_MODE = true`) in one place (like `content/siteConfig.ts` or `lib/config.ts`).
+   - When true: show placeholder boxes instead of images.
+   - When false: show real images again.
+
+3) Replace ALL images across the site with placeholders when the flag is ON, except:
+   - Home page theme/hero image must stay real and unchanged.
+
+SCOPE
+- Cover every image:
+  - Page “theme/hero” images
+  - Inline images inside sections/cards
+  - Any decorative images used as backgrounds (if backgrounds are done via CSS, replace with a placeholder block in that same area).
+- Ensure numbering is unique and stable.
+  - The same image position should always keep the same number between refreshes.
+  - Prefer hardcoding the numbers at each usage site (e.g., placeholderId={1}) to keep them stable.
+
+DELIVERABLE
+- After implementing, output a list mapping:
+  IMG #01 -> Page/Route -> Section description (e.g., “/rates hero image”, “/events section image #1”)
+- Confirm that Home hero/theme image remains unchanged.
+
+DO NOT
+- Change copy or layout
+- Change navigation
+- Add new pages
