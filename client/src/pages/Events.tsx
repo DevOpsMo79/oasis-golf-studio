@@ -1,6 +1,6 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
-import interiorImg from "@assets/image_1770635582046.png";
+import interiorImg from "@assets/PGAWest_GolfAcademy_TaraHoward-29-scaled_1770299247761.jpg";
 
 export default function Events() {
   return (

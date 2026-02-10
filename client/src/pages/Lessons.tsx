@@ -1,7 +1,7 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { Video, UserCheck, TrendingUp } from "lucide-react";
-import heroImg from "@assets/image_1770635548817.png";
+import heroImg from "@assets/4c8a1be4ba9c42059e37c029c7871f8b_1770557490535.jpg";
 
 export default function Lessons() {
   return (
