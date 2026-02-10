@@ -37,6 +37,7 @@ export default function Contact() {
         title="Contact Us" 
         description="Get in touch for bookings, events, or general inquiries."
         image={interiorImg}
+        placeholderId={5}
       />
 
       <div className="container px-4 md:px-6 py-16">

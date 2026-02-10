@@ -10,6 +10,7 @@ export default function Lessons() {
         title="Coaching & Development" 
         description="Data-driven instruction from certified professionals."
         image={heroImg}
+        placeholderId={6}
       />
 
       <div className="container px-4 md:px-6 py-16">

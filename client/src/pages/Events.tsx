@@ -9,6 +9,7 @@ export default function Events() {
         title="Events & Leagues" 
         description="Compete with the community or host your own private gathering."
         image={interiorImg}
+        placeholderId={7}
       />
 
       <div className="container px-4 md:px-6 py-16">

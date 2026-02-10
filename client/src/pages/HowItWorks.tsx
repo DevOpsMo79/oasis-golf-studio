@@ -36,6 +36,7 @@ export default function HowItWorks() {
         title="How It Works" 
         description="A simple, automated experience designed to get you playing faster."
         image={interiorImg}
+        placeholderId={8}
       />
 
       <div className="container px-4 md:px-6 py-16">
