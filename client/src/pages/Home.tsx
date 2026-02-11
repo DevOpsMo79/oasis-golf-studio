@@ -4,7 +4,7 @@ import { ArrowRight, Target, Users, Trophy, Calendar, CheckCircle2 } from "lucid
 import { IMAGE_PLACEHOLDER_MODE } from "@/lib/config";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import heroImg from "@assets/IMG-20250730-WA0016_1770557490533.jpg";
-import interiorImg from "@assets/img#01_1770819759953.jpg";
+import interiorImg from "@assets/img01_1770819759953.jpg";
 import trackmanImg from "@assets/usedbythebest_1770819759949.jpg";
 
 export default function Home() {

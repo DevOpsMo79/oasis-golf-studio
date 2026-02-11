@@ -65,7 +65,7 @@ export default function HowItWorks() {
                     <p className="text-muted-foreground leading-relaxed">{step.description}</p>
                   </div>
                 </div>
-                <ImagePlaceholder id={step.placeholderId} section={step.title} className="aspect-video" />
+                {IMAGE_PLACEHOLDER_MODE && <ImagePlaceholder id={step.placeholderId} section={step.title} className="aspect-video" />}
               </div>
               
               {/* Connector Line for visual flow (desktop only) */}
