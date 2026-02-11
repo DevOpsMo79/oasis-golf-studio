@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] flex items-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img src={heroImg} alt="Golf Simulator" className="w-full h-full object-cover" />
+      <section className="relative flex items-center overflow-hidden">
+        <div className="relative w-full z-0">
+          <img src={heroImg} alt="Golf Simulator" className="w-full h-auto object-contain max-h-screen" />
           <div className="absolute inset-0 bg-background/50 bg-gradient-to-r from-background via-background/60 to-transparent" />
         </div>
 
-        <div className="container relative z-10 px-4 md:px-6">
+        <div className="container absolute z-10 px-4 md:px-6">
           <div className="max-w-3xl space-y-8">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
