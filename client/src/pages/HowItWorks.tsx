@@ -1,6 +1,8 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { CheckCircle2, CalendarCheck, MapPin, PlayCircle, TrendingUp } from "lucide-react";
-import interiorImg from "@assets/431ca75328a44fe587fde37bbb3b4829_1770557490535.jpg";
+import { IMAGE_PLACEHOLDER_MODE } from "@/lib/config";
+import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import interiorImg from "@assets/swing_1770819759955.jpg";
 
 export default function HowItWorks() {
   const steps = [
@@ -9,24 +11,28 @@ export default function HowItWorks() {
       title: "Book Your Bay",
       description: "Use our seamless online booking system to reserve your preferred time and bay. Choose from standard bays or our VIP private suite.",
       icon: CalendarCheck,
+      placeholderId: 9,
     },
     {
       id: "02",
       title: "Arrive & Check-In",
       description: "Upon arrival, check in at the front desk. Our staff will guide you to your bay and help set up your profile on the simulator.",
       icon: MapPin,
+      placeholderId: 10,
     },
     {
       id: "03",
       title: "Play or Practice",
       description: "Choose from 100+ famous courses or hit the driving range. The technology tracks every shot with pinpoint accuracy.",
       icon: PlayCircle,
+      placeholderId: 11,
     },
     {
       id: "04",
       title: "Analyze & Improve",
       description: "Access your data instantly. Review video of your swing, check carry distances, and track your progress over time.",
       icon: TrendingUp,
+      placeholderId: 12,
     },
   ];
 
@@ -46,17 +52,20 @@ export default function HowItWorks() {
               key={step.id} 
               className={`flex flex-col md:flex-row gap-8 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
             >
-              <div className="flex-1 bg-card p-8 rounded-2xl border border-white/5 w-full relative group hover:border-primary/30 transition-all duration-300">
-                <div className="absolute -top-6 left-8 bg-background border border-white/10 p-3 rounded-xl shadow-xl">
-                  <step.icon className="w-8 h-8 text-primary" />
+              <div className="flex-1 space-y-4">
+                <div className="bg-card p-8 rounded-2xl border border-white/5 w-full relative group hover:border-primary/30 transition-all duration-300">
+                  <div className="absolute -top-6 left-8 bg-background border border-white/10 p-3 rounded-xl shadow-xl">
+                    <step.icon className="w-8 h-8 text-primary" />
+                  </div>
+                  <div className="mt-6">
+                    <span className="text-6xl font-display font-bold text-white/5 absolute top-4 right-6 group-hover:text-primary/10 transition-colors">
+                      {step.id}
+                    </span>
+                    <h3 className="text-2xl font-bold mb-4 font-display">{step.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                  </div>
                 </div>
-                <div className="mt-6">
-                  <span className="text-6xl font-display font-bold text-white/5 absolute top-4 right-6 group-hover:text-primary/10 transition-colors">
-                    {step.id}
-                  </span>
-                  <h3 className="text-2xl font-bold mb-4 font-display">{step.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{step.description}</p>
-                </div>
+                <ImagePlaceholder id={step.placeholderId} section={step.title} className="aspect-video" />
               </div>
               
               {/* Connector Line for visual flow (desktop only) */}

@@ -1,24 +1,26 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { Video, UserCheck, TrendingUp } from "lucide-react";
-import heroImg from "@assets/4c8a1be4ba9c42059e37c029c7871f8b_1770557490535.jpg";
+import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import heroImg from "@assets/coaching_1770819759951.jpg";
 
 export default function Lessons() {
   return (
     <div className="min-h-screen pb-24">
       <PageHeader 
-        title="Coaching & Development" 
+        title="Why Train at Oasis Golf Studio?" 
         description="Data-driven instruction from certified professionals."
         image={heroImg}
         placeholderId={6}
       />
 
       <div className="container px-4 md:px-6 py-16">
+        <ImagePlaceholder id={13} section="Lessons Content Top" className="aspect-[21/9] mb-12" />
         <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
           <div className="space-y-6">
-            <h2 className="text-3xl font-display font-bold">Why Train at Oasis?</h2>
+            <h2 className="text-3xl font-display font-bold">Why Train at Oasis Golf Studio?</h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Traditional ranges leave you guessing. At Oasis, we use TrackMan dual-radar technology 
+              Traditional ranges leave you guessing. At Oasis Golf Studio, we use TrackMan dual-radar technology 
               to measure every aspect of your swing. Our coaches combine this data with high-speed 
               video analysis to make precise adjustments that stick.
             </p>

@@ -1,6 +1,7 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
-import interiorImg from "@assets/PGAWest_GolfAcademy_TaraHoward-29-scaled_1770299247761.jpg";
+import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import interiorImg from "@assets/Entertainment_1770819759953.jpg";
 
 export default function Events() {
   return (
@@ -13,6 +14,7 @@ export default function Events() {
       />
 
       <div className="container px-4 md:px-6 py-16">
+        <ImagePlaceholder id={14} section="Events Content Top" className="aspect-[21/9] mb-12" />
         <div className="grid md:grid-cols-2 gap-8 mb-24">
           <div className="bg-gradient-to-br from-card to-background p-10 rounded-3xl border border-white/5 flex flex-col justify-between min-h-[400px]">
             <div>

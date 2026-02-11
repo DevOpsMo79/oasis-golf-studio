@@ -4,8 +4,8 @@ import { ArrowRight, Target, Users, Trophy, Calendar, CheckCircle2 } from "lucid
 import { IMAGE_PLACEHOLDER_MODE } from "@/lib/config";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import heroImg from "@assets/IMG-20250730-WA0016_1770557490533.jpg";
-import interiorImg from "@assets/0a904082e9334b50a9b008a80e13a5d9_1770557490535.jpg";
-import trackmanImg from "@assets/431ca75328a44fe587fde37bbb3b4829_1770557490535.jpg";
+import interiorImg from "@assets/img#01_1770819759953.jpg";
+import trackmanImg from "@assets/usedbythebest_1770819759949.jpg";
 
 export default function Home() {
   return (
@@ -154,24 +154,8 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-display font-bold">Performance First. Convenience Always.</h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Oasis is designed for serious golfers who value performance, convenience, and community. 
-                Our self-service, app-based access allows you to practice on your own terms in a climate-controlled sanctuary. 
-                From professional-grade simulator bays to a boutique coffee lounge, Oasis is Riyadh's new home for golf excellence.
+                Come visit us at Oasis Golf Studio, Riyadh’s new destination for golf excellence.
               </p>
-              <ul className="space-y-4 pt-4">
-                <li className="flex items-center gap-3">
-                  <div className="p-2 rounded-full bg-primary/10 text-primary"><Target className="w-5 h-5" /></div>
-                  <span className="font-medium">2 Open TrackMan iO Bays</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="p-2 rounded-full bg-primary/10 text-primary"><Users className="w-5 h-5" /></div>
-                  <span className="font-medium">1 Private VIP TrackMan 4 Bay</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="p-2 rounded-full bg-primary/10 text-primary"><Trophy className="w-5 h-5" /></div>
-                  <span className="font-medium">1 Coaching TrackMan iO Bay</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -228,7 +212,7 @@ export default function Home() {
         <div className="container relative z-10 text-center px-4">
           <h2 className="text-4xl md:text-6xl font-display font-bold mb-8">Ready to Tee Off?</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            Join the Oasis community today. Book your first session or inquire about memberships.
+            Join the Oasis Golf Studio community today. Book your first session or inquire about memberships.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact">

@@ -1,1 +1,1 @@
-export const IMAGE_PLACEHOLDER_MODE = true;
+export const IMAGE_PLACEHOLDER_MODE = false;

@@ -1,0 +1,86 @@
+Apply the following updates with MINIMUM code changes.
+DO NOT reinitialize the project.
+DO NOT refactor components or redesign layouts.
+Only modify what is explicitly requested below.
+
+A) ADD / FIX IMAGE PLACEHOLDERS (STRUCTURAL ONLY)
+
+1) HOME PAGE
+- Keep the existing Home hero/theme image unchanged.
+- Add ONE additional image placeholder in the “Why TrackMan” section.
+- Assign the next available IMG number and include it in the mapping.
+- Do not move or redesign the section; just add the placeholder in a visually appropriate position.
+
+2) HOW IT WORKS PAGE
+- For each major section/step on the How It Works page, add an image placeholder.
+- Place one placeholder per section, aligned with the section’s content.
+- Assign sequential IMG numbers for each new placeholder.
+- Do not change the copy or layout structure.
+
+3) LESSONS PAGE
+- Update the page title to exactly:
+  “Why Train at Oasis Golf Studio?”
+- Add ONE image placeholder placed conveniently within the page (near the top or alongside the main content).
+- Assign the next sequential IMG number.
+
+4) EVENTS PAGE
+- Add ONE image placeholder placed conveniently within the page (header or first content section).
+- Assign the next sequential IMG number.
+
+5) FAQ PAGE
+- Ensure the FAQ page header/hero has a numbered placeholder:
+  - IMG #09 -> FAQ -> Page Header
+- Keep numbering consistent and sequential across the entire site.
+
+B) HOME PAGE — SHORTEN SECTION COPY (RE-APPLY)
+On the Home page, locate the section that currently shows:
+- Heading: “Performance First. Convenience Always.”
+- A long paragraph AND a bulleted/icon list.
+
+Update that section to show ONLY:
+
+Heading:
+“Performance First. Convenience Always.”
+
+Subtext:
+“Come visit us at Oasis Golf Studio, Riyadh’s new destination for golf excellence.”
+
+Rules:
+- Remove the long paragraph entirely.
+- Remove the bulleted/icon items entirely.
+- Do not leave awkward empty spacing.
+
+C) GLOBAL COPY RULE
+Ensure the site never uses “Oasis” by itself in a sentence.
+Always use “Oasis Golf Studio”.
+Perform a targeted replacement only where “Oasis” is used as a standalone brand reference.
+
+D) IMAGE PLACEMENT (ALL IMG PLACEHOLDERS)
+For each instruction below, replace the placeholder at the specified IMG number with the provided image file.
+Keep all other placeholders unchanged.
+
+IMAGE MAPPING (I WILL PROVIDE FILENAMES)
+- IMG #01 -> filename: [PUT_FILENAME_HERE]
+- IMG #02 -> filename: [PUT_FILENAME_HERE]
+- IMG #03 -> filename: [PUT_FILENAME_HERE]
+- IMG #04 -> filename: [PUT_FILENAME_HERE]
+- IMG #05 -> filename: [PUT_FILENAME_HERE]
+- IMG #06 -> filename: [PUT_FILENAME_HERE]
+- IMG #07 -> filename: [PUT_FILENAME_HERE]
+- IMG #08 -> filename: [PUT_FILENAME_HERE]
+- IMG #09 -> filename: [PUT_FILENAME_HERE]
+- (include any newly added IMG numbers from section A)
+
+RULES
+- Use the existing image container for each placeholder.
+- Do not resize or move containers.
+- Use Next.js <Image> and preserve the original aspect ratio.
+- If the image is a background, replace the placeholder using the same overlay behavior.
+- Keep the Home page theme/hero image unchanged unless explicitly instructed.
+- Add accurate alt text describing what the image shows.
+
+E) OUTPUT (REQUIRED)
+After applying:
+- List all IMG numbers and where they appear (page + section).
+- List which IMG numbers were newly added.
+- List exactly which files were modified.

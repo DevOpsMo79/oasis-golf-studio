@@ -7,7 +7,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail } from "lucide-react";
-import interiorImg from "@assets/PGAWest_GolfAcademy_TaraHoward-29-scaled_1770299247761.jpg";
+import interiorImg from "@assets/OGS3_1770819759955.jpg";
 import type { ContactInput } from "@shared/routes";
 
 export default function Contact() {
@@ -45,7 +45,7 @@ export default function Contact() {
           {/* Info Side */}
           <div className="space-y-12">
             <div>
-              <h2 className="text-3xl font-display font-bold mb-6">Visit Oasis</h2>
+              <h2 className="text-3xl font-display font-bold mb-6">Visit Oasis Golf Studio</h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 We're located in the heart of Riyadh. Come visit us for a tour of the facility or just to say hello.
               </p>
