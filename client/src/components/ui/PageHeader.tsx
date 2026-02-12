@@ -34,7 +34,7 @@ export function PageHeader({ title, description, image, placeholderId }: PageHea
       )}
       
       {/* Content */}
-      <div className="container absolute z-10 px-4 text-center">
+      <div className="container absolute z-10 px-4 text-center bottom-8 md:bottom-12">
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
