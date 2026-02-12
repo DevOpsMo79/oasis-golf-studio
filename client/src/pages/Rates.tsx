@@ -50,7 +50,7 @@ export default function Rates() {
         placeholderId={3}
       />
 
-      <div className="container px-4 md:px-6 -mt-20 relative z-10">
+      <div className="container px-4 md:px-6 mt-8 md:mt-12 relative z-10">
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Open Bay Rates */}
           <div className="bg-card rounded-2xl p-8 shadow-xl border border-white/5 hover:border-primary/30 transition-all duration-300">

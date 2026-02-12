@@ -17,7 +17,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-background/50 bg-gradient-to-r from-background via-background/60 to-transparent" />
         </div>
 
-        <div className="container absolute z-10 px-4 md:px-6 bottom-12 md:bottom-24">
+        <div className="container absolute z-10 px-4 md:px-6 bottom-8 md:bottom-12">
           <div className="max-w-3xl space-y-8">
             <motion.div
               initial={{ opacity: 0, x: -50 }}

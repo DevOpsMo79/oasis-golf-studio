@@ -7,7 +7,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail } from "lucide-react";
-import interiorImg from "@assets/OGS3_1770819759955.jpg";
+import interiorImg from "@assets/img01_1770819759953.jpg";
 import type { ContactInput } from "@shared/routes";
 
 export default function Contact() {
