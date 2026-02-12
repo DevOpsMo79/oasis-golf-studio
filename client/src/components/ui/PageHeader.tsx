@@ -13,17 +13,17 @@ export function PageHeader({ title, description, image, placeholderId }: PageHea
   const showPlaceholder = IMAGE_PLACEHOLDER_MODE && placeholderId !== undefined;
 
   return (
-    <div className="relative flex items-center justify-center overflow-hidden">
+    <div className="relative flex items-center justify-center overflow-hidden bg-background">
       {/* Background Image with Overlay */}
       {image && !showPlaceholder && (
-        <div className="relative w-full z-0">
-          <img src={image} alt={title} className="w-full h-auto object-contain max-h-[80vh]" />
-          <div className="absolute inset-0 bg-background/50 bg-gradient-to-t from-background to-background/20" />
+        <div className="relative w-full z-0 flex items-center justify-center bg-background h-[40vh] md:h-[50vh] lg:h-[60vh] max-h-[600px]">
+          <img src={image} alt={title} className="max-w-full max-h-full object-contain" />
+          <div className="absolute inset-0 bg-background/40 bg-gradient-to-t from-background to-transparent" />
         </div>
       )}
 
       {showPlaceholder && (
-        <div className="absolute inset-0 z-0 h-[40vh] min-h-[400px]">
+        <div className="absolute inset-0 z-0 h-[40vh] md:h-[50vh] lg:h-[60vh] max-h-[600px]">
           <ImagePlaceholder 
             id={placeholderId} 
             className="h-full rounded-none border-none bg-background/50" 

@@ -1,0 +1,101 @@
+Apply the following updates with MINIMUM code changes.
+DO NOT reinitialize the project.
+DO NOT redesign the layout.
+Only adjust hero image rendering and update the memberships section.
+
+---------------------------------------------------
+A) HERO IMAGE FIX – Balanced Premium Layout
+---------------------------------------------------
+
+Current issue:
+Hero/header images are too large and push all content too far down the page.
+
+Goal:
+Keep the FULL image visible (no cropping),
+but maintain a balanced, premium hero height.
+
+Required changes:
+
+1) For all top-of-page hero/header images (except Home theme if already correct):
+   - Remove fixed large heights.
+   - Do NOT use object-cover.
+   - Use object-contain.
+   - Preserve aspect ratio.
+
+2) Constrain hero container height using a balanced responsive max height:
+   - Desktop: max-height approx 60vh
+   - Tablet: max-height approx 50vh
+   - Mobile: max-height approx 40vh
+
+3) Center the image vertically and horizontally inside the container.
+
+4) Ensure:
+   - No stretching
+   - No cropping
+   - No layout shift
+   - The section below starts naturally under the hero
+
+5) Keep overlay styling subtle if present, but ensure it does not crop the image.
+
+6) Apply the same solution consistently across:
+   - Rates
+   - Memberships
+   - Lessons
+   - Events
+   - How It Works
+   - FAQ
+
+Do NOT change the Home main hero image unless necessary.
+
+---------------------------------------------------
+B) MEMBERSHIPS UPDATE – Replace with 3 Tiers Only
+---------------------------------------------------
+
+Replace the entire memberships offering with ONLY these 3 plans.
+Remove any old tiers (including Albatross).
+
+🟢 Par – Entry
+699 SAR/month
+
+Includes:
+- 7-day booking window
+- 50 SAR off hourly rate
+- 2 guest passes/month
+- Equipment storage access
+
+🔵 Birdie – Core Tier
+1,099 SAR/month
+
+Includes:
+- 14-day booking
+- 60 SAR off hourly rate
+- 4 guest passes
+- Priority peak booking access
+- 10% F&B discount
+
+🔴 Eagle – Premium
+1,499 SAR/month
+
+Includes:
+- 21-day booking
+- 70 SAR off hourly rate
+- 6 guest passes
+- Peak hour priority
+- 15% F&B discount
+- Locker included
+
+Formatting requirements:
+- Use clean card layout.
+- Keep consistent spacing.
+- Highlight Eagle slightly as premium.
+- No additional tiers.
+- No leftover text from previous membership structure.
+
+---------------------------------------------------
+OUTPUT
+---------------------------------------------------
+
+When complete:
+- List which files were modified.
+- Briefly describe what was changed in hero image logic.
+- Confirm that only 3 membership tiers remain.
