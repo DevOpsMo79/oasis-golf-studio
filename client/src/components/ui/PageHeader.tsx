@@ -18,7 +18,7 @@ export function PageHeader({ title, description, image, placeholderId }: PageHea
       {image && !showPlaceholder && (
         <div className="relative w-full z-0 flex items-center justify-center bg-background h-[40vh] md:h-[50vh] lg:h-[60vh] max-h-[600px]">
           <img src={image} alt={title} className="max-w-full max-h-full object-contain" />
-          <div className="absolute inset-0 bg-background/40 bg-gradient-to-t from-background to-transparent" />
+          <div className="absolute inset-0 bg-background/20 bg-gradient-to-t from-background to-transparent" />
         </div>
       )}
 
@@ -29,7 +29,7 @@ export function PageHeader({ title, description, image, placeholderId }: PageHea
             className="h-full rounded-none border-none bg-background/50" 
             section="Page Header"
           />
-          <div className="absolute inset-0 bg-background/30" />
+          <div className="absolute inset-0 bg-background/20" />
         </div>
       )}
       

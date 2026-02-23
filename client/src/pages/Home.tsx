@@ -14,7 +14,7 @@ export default function Home() {
       <section className="relative flex items-center overflow-hidden">
         <div className="relative w-full z-0">
           <img src={heroImg} alt="Golf Simulator" className="w-full h-auto object-contain max-h-screen" />
-          <div className="absolute inset-0 bg-background/50 bg-gradient-to-r from-background via-background/60 to-transparent" />
+          <div className="absolute inset-0 bg-background/30 bg-gradient-to-r from-background via-background/40 to-transparent" />
         </div>
 
         <div className="container absolute z-10 px-4 md:px-6 bottom-8 md:bottom-12">
