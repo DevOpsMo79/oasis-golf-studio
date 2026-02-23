@@ -16,20 +16,20 @@ export function PageHeader({ title, description, image, placeholderId }: PageHea
     <div className="relative flex items-center justify-center overflow-hidden bg-background">
       {/* Background Image with Overlay */}
       {image && !showPlaceholder && (
-        <div className="relative w-full z-0 flex items-center justify-center bg-background h-[40vh] md:h-[50vh] lg:h-[60vh] max-h-[600px]">
-          <img src={image} alt={title} className="max-w-full max-h-full object-contain" />
-          <div className="absolute inset-0 bg-background/20 bg-gradient-to-t from-background to-transparent" />
+        <div className="relative w-full z-0 flex items-center justify-center bg-background h-[40vh] md:h-[50vh] lg:h-[70vh] max-h-[800px]">
+          <img src={image} alt={title} className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-background/10 bg-gradient-to-t from-background/40 to-transparent" />
         </div>
       )}
 
       {showPlaceholder && (
-        <div className="absolute inset-0 z-0 h-[40vh] md:h-[50vh] lg:h-[60vh] max-h-[600px]">
+        <div className="absolute inset-0 z-0 h-[40vh] md:h-[50vh] lg:h-[70vh] max-h-[800px]">
           <ImagePlaceholder 
             id={placeholderId} 
             className="h-full rounded-none border-none bg-background/50" 
             section="Page Header"
           />
-          <div className="absolute inset-0 bg-background/20" />
+          <div className="absolute inset-0 bg-background/10" />
         </div>
       )}
       

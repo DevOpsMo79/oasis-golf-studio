@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative flex items-center overflow-hidden">
-        <div className="relative w-full z-0">
-          <img src={heroImg} alt="Golf Simulator" className="w-full h-auto object-contain max-h-screen" />
-          <div className="absolute inset-0 bg-background/30 bg-gradient-to-r from-background via-background/40 to-transparent" />
+      <section className="relative flex items-center overflow-hidden h-[60vh] md:h-[80vh] lg:h-[90vh]">
+        <div className="absolute inset-0 z-0">
+          <img src={heroImg} alt="Golf Simulator" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-background/10 bg-gradient-to-r from-background/40 via-background/20 to-transparent" />
         </div>
 
         <div className="container absolute z-10 px-4 md:px-6 bottom-8 md:bottom-12">
