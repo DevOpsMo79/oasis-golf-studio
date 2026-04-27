@@ -212,12 +212,12 @@ export default function Home() {
         <div className="container relative z-10 text-center px-4">
           <h2 className="text-4xl md:text-6xl font-display font-bold mb-8">Ready to Tee Off?</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            Join the Oasis Golf Studio community today. Book your first session or inquire about memberships.
+            Oasis Golf Studio opens Q4 2026 in central Riyadh. Register your interest now to be first in line for founding membership and early access.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact">
               <button className="px-10 py-4 rounded-full bg-primary text-primary-foreground font-bold text-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/25">
-                Book Now
+                Register Interest
               </button>
             </Link>
             <Link href="/memberships">
