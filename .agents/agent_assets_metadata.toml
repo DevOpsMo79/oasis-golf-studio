@@ -48,3 +48,177 @@ id = "0HSeUElwiZ3fBvwZYykfL"
 uri = "file://screenshots/08-contact.jpg"
 type = "image"
 title = "Contact"
+
+[[outputs]]
+id = "n0IBozfjWMOlsLcJqpeoC"
+uri = "file://screenshots/01-home-a.jpg"
+type = "image"
+title = "Home — Hero"
+
+[[outputs]]
+id = "ngS9_7nsIKek2GVPdgpgT"
+uri = "file://screenshots/01-home-b.jpg"
+type = "image"
+title = "Home — Why TrackMan"
+
+[[outputs]]
+id = "eooHaZocFC7kEg53ytirH"
+uri = "file://screenshots/01-home-c.jpg"
+type = "image"
+title = "Home — Performance First"
+
+[[outputs]]
+id = "oFQRrq1MCLA3b8WBwBM-8"
+uri = "file://screenshots/01-home-d.jpg"
+type = "image"
+title = "Home — Elevate Your Game"
+
+[[outputs]]
+id = "wUDxY1CFlh9sGDgUrjxIm"
+uri = "file://screenshots/01-home-e.jpg"
+type = "image"
+title = "Home — Ready to Tee Off / Footer"
+
+[[outputs]]
+id = "erOWdMnkHUfjqtz27hp-I"
+uri = "file://screenshots/01-home-f.jpg"
+type = "image"
+title = "Home — Footer"
+
+[[outputs]]
+id = "4qZR1YTA5Os5_jCV_2dPW"
+uri = "file://screenshots/02-how-it-works-a.jpg"
+type = "image"
+title = "How It Works — Hero & Step 01"
+
+[[outputs]]
+id = "O9dQmVYRAqqC0mhKr1W_I"
+uri = "file://screenshots/02-how-it-works-b.jpg"
+type = "image"
+title = "How It Works — Steps 02-04"
+
+[[outputs]]
+id = "UIxY_J6rhDbXRN2n_UDme"
+uri = "file://screenshots/02-how-it-works-c.jpg"
+type = "image"
+title = "How It Works — Fully Automated"
+
+[[outputs]]
+id = "VCp7bEWg_uqM6BkvZETrJ"
+uri = "file://screenshots/03-rates-a.jpg"
+type = "image"
+title = "Rates — Hero & Bay Pricing"
+
+[[outputs]]
+id = "BOYUolWP6it2JI7RH6TDT"
+uri = "file://screenshots/03-rates-b.jpg"
+type = "image"
+title = "Rates — Peak/Off-Peak Hours"
+
+[[outputs]]
+id = "Jd47NUya8VZJ8ewOlehIp"
+uri = "file://screenshots/03-rates-c.jpg"
+type = "image"
+title = "Rates — Footer"
+
+[[outputs]]
+id = "hvMBfs-q83Bj2zaLTyUMB"
+uri = "file://screenshots/04-memberships-a.jpg"
+type = "image"
+title = "Memberships — Hero & Founding Member Banner"
+
+[[outputs]]
+id = "J21DAqgh43tEl96LCkrUg"
+uri = "file://screenshots/04-memberships-b.jpg"
+type = "image"
+title = "Memberships — All Four Tiers"
+
+[[outputs]]
+id = "p1A3Edl7V3n5eiWdR6MsS"
+uri = "file://screenshots/04-memberships-c.jpg"
+type = "image"
+title = "Memberships — CTAs & VAT Note"
+
+[[outputs]]
+id = "XWXcA7x1kSjNqEgEFd-jK"
+uri = "file://screenshots/05-lessons-a.jpg"
+type = "image"
+title = "Lessons — Hero & Why Train"
+
+[[outputs]]
+id = "FSGH1WTFbSSYHgrDExn7F"
+uri = "file://screenshots/05-lessons-b.jpg"
+type = "image"
+title = "Lessons — Coaching Rates Intro"
+
+[[outputs]]
+id = "ORfcfeBJK3aL5uh9fGz7B"
+uri = "file://screenshots/05-lessons-c.jpg"
+type = "image"
+title = "Lessons — Coaching Rates (Group/Monthly)"
+
+[[outputs]]
+id = "7k8V47ODG6j4Kdln5GV0u"
+uri = "file://screenshots/05-lessons-d.jpg"
+type = "image"
+title = "Lessons — Programs"
+
+[[outputs]]
+id = "heMsaJ8IJIw0gvF4oksz_"
+uri = "file://screenshots/05-lessons-e.jpg"
+type = "image"
+title = "Lessons — Footer"
+
+[[outputs]]
+id = "nsCCBQnbGL6RiXAOjXSeA"
+uri = "file://screenshots/06-events-a.jpg"
+type = "image"
+title = "Events — Hero & League Cards"
+
+[[outputs]]
+id = "zqvBDWNEBc84OBPH8JcUd"
+uri = "file://screenshots/06-events-b.jpg"
+type = "image"
+title = "Events — Corporate & Private Booking"
+
+[[outputs]]
+id = "_nlsB16G6xgdHfost6LmY"
+uri = "file://screenshots/06-events-c.jpg"
+type = "image"
+title = "Events — Footer"
+
+[[outputs]]
+id = "kUJKQpOI-NWBcdXv37Dqo"
+uri = "file://screenshots/07-faq-a.jpg"
+type = "image"
+title = "FAQ — Hero & Top Questions"
+
+[[outputs]]
+id = "W_CuUtzcR7JdWdlfUJd31"
+uri = "file://screenshots/07-faq-b.jpg"
+type = "image"
+title = "FAQ — More Questions"
+
+[[outputs]]
+id = "IlOaWZcmoA_bwrQPY-edb"
+uri = "file://screenshots/07-faq-c.jpg"
+type = "image"
+title = "FAQ — End & Footer"
+
+[[outputs]]
+id = "QmYjqDA30ngsEmGXkhG-Q"
+uri = "file://screenshots/08-contact-a.jpg"
+type = "image"
+title = "Contact — Hero & Form Top"
+
+[[outputs]]
+id = "FHJi6uc51sc2olz05dfYh"
+uri = "file://screenshots/08-contact-b.jpg"
+type = "image"
+title = "Contact — Form & Map"
+
+[[outputs]]
+id = "vZZgQfagNzj941AXgLMGL"
+uri = "file://screenshots/08-contact-c.jpg"
+type = "image"
+title = "Contact — Footer"
