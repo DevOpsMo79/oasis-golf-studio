@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative flex items-center overflow-hidden">
+      <section className="relative overflow-hidden md:flex md:items-center">
         <div className="relative w-full z-0">
           <img src={heroImg} alt="Golf Simulator" className="w-full h-auto object-contain max-h-screen" />
           <div className="absolute inset-0 bg-background/30 bg-gradient-to-r from-background via-background/40 to-transparent" />
         </div>
 
-        <div className="container absolute z-10 px-4 md:px-6 bottom-8 md:bottom-12">
+        <div className="container relative md:absolute z-10 px-4 md:px-6 py-10 md:py-0 md:bottom-12">
           <div className="max-w-3xl space-y-8">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -59,7 +59,7 @@ export default function Home() {
             >
               <Link href="/contact">
                 <button className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:shadow-xl hover:translate-y-[-2px]">
-                  Book a Bay
+                  Register Interest
                 </button>
               </Link>
               <Link href="/how-it-works">
