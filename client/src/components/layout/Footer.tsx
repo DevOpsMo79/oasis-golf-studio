@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Facebook, Instagram, Twitter, MapPin, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, MapPin, Mail, Phone } from "lucide-react";
 import logoArb from "@assets/OGS_Brandin_Logo_v2.5_Arb_1770557429156.png";
 
 export function Footer() {
@@ -10,7 +10,7 @@ export function Footer() {
           <div className="space-y-6">
             <img src={logoArb} alt="Oasis Golf Studio Arabic Logo" className="h-16 w-auto opacity-90" />
             <p className="text-muted-foreground leading-relaxed">
-              Oasis Golf Studio is Riyadh's first premium indoor golf performance studio. Bringing the outdoors indoors.
+              Oasis Golf Studio is Riyadh's first performance-exclusive indoor golf studio. Bringing the outdoors indoors.
             </p>
             <div className="flex gap-4">
               <a href="#" className="p-2 rounded-full bg-secondary hover:bg-primary/20 hover:text-primary transition-colors">
@@ -20,7 +20,7 @@ export function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 rounded-full bg-secondary hover:bg-primary/20 hover:text-primary transition-colors">
-                <Twitter className="w-5 h-5" />
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -57,7 +57,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>+966 5X XXX XXXX</span>
+                <span>+966 53 487 1043</span>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-5 h-5 text-primary shrink-0" />

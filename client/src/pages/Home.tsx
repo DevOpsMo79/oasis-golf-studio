@@ -28,7 +28,7 @@ export default function Home() {
                 Bringing the <span className="text-gradient-orange">Outdoors</span> <br/> Indoors.
               </h1>
               <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
-                Oasis Golf Studio is Riyadh’s first premium indoor golf studio, powered by TrackMan technology. Designed for serious golfers who value performance, convenience, and community, our self-service, app-based access lets you practice and/or play on your own terms in a climate-controlled, professional-grade, digitally managed space.
+                Riyadh's first performance-exclusive indoor golf studio, powered by TrackMan. Self-service, app-based bays for serious golfers who value performance, convenience, and community.
               </p>
               <h3 className="text-xl font-bold mt-8 mb-4 text-white font-display">Our facility offers:</h3>
               <ul className="space-y-3 text-muted-foreground text-lg">
@@ -154,7 +154,7 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-display font-bold">Performance First. Convenience Always.</h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Come visit us at Oasis Golf Studio, Riyadh’s new destination for golf excellence.
+                Opening Q4 2026 — central Riyadh.
               </p>
             </div>
           </div>
@@ -197,7 +197,7 @@ export default function Home() {
                 <Calendar className="w-8 h-8" />
               </div>
               <h3 className="text-2xl font-bold mb-4 font-display">Events</h3>
-              <p className="text-muted-foreground mb-6">Host your next corporate outing, birthday party, or join our competitive leagues.</p>
+              <p className="text-muted-foreground mb-6">Host your next corporate outing, team event, or competitive league tournament.</p>
               <Link href="/events" className="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                 Learn More <ArrowRight className="w-4 h-4" />
               </Link>

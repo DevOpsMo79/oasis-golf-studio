@@ -131,7 +131,7 @@ export default function Rates() {
         </div>
 
         <div className="text-center mt-12 text-muted-foreground max-w-2xl mx-auto">
-          <p className="text-sm">Oasis Golf Studio is Riyadh's first premium indoor golf performance studio. Digitally managed for ultimate convenience and performance tracking.</p>
+          <p className="text-sm">Oasis Golf Studio is Riyadh's first performance-exclusive indoor golf studio. Digitally managed for ultimate convenience and performance tracking.</p>
         </div>
       </div>
     </div>

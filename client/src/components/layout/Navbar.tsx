@@ -61,7 +61,7 @@ export function Navbar() {
           ))}
           <Link href="/contact">
             <button className="px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25">
-              Book Now
+              Register Interest
             </button>
           </Link>
         </div>
@@ -95,7 +95,7 @@ export function Navbar() {
           ))}
           <Link href="/contact" className="mt-4">
             <button className="px-8 py-3 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-all">
-              Book Now
+              Register Interest
             </button>
           </Link>
         </div>
