@@ -1,0 +1,113 @@
+I need to update the pricing and memberships on the OGS (Oasis Golf Studio) website. Please make the following changes:
+
+─────────────────────────────────────────
+1. RATES PAGE — Bay Pricing (no change needed, keep as is)
+─────────────────────────────────────────
+- TrackMan iO Open Bays: SAR 200/hr peak, SAR 150/hr off-peak ✓
+- TrackMan 4 Private Bay: SAR 300/hr peak, SAR 250/hr off-peak ✓
+- Peak hours (Weekdays): 6 AM–9 AM & 5 PM–1 AM ✓
+- Peak hours (Friday & Saturday): 6 AM–1 AM (All Day) ✓
+These are already correct — do NOT change them.
+
+─────────────────────────────────────────
+2. MEMBERSHIPS PAGE — Update All Three Tiers
+─────────────────────────────────────────
+Change the membership structure from discount-based to HOURS-INCLUDED model.
+Update prices and benefits as follows:
+
+PAR TIER (was SAR 699/month → now SAR 899/month)
+- New tagline: "Entry level access for consistent improvement."
+- Price: SAR 899 / month
+- Benefits:
+  ✓ 4 hours per month included (open bay)
+  ✓ SAR 30 off additional hourly rate
+  ✓ 7-day advance booking
+  ✓ 2 guest passes per month
+  ✓ Equipment storage access
+
+BIRDIE TIER (was SAR 1,099/month → now SAR 1,299/month)
+- New tagline: "Ideal for regular practice and development."
+- Price: SAR 1,299 / month
+- Benefits:
+  ✓ 8 hours per month included (open bay)
+  ✓ SAR 40 off additional hourly rate
+  ✓ 14-day advance booking
+  ✓ 4 guest passes per month
+  ✓ Priority peak hour booking
+  ✓ 10% F&B discount
+
+EAGLE TIER (was SAR 1,499/month → now SAR 1,799/month)
+- New tagline: "Premium experience for dedicated golfers."
+- Price: SAR 1,799 / month
+- Benefits:
+  ✓ 16 hours per month included (open or private bay)
+  ✓ SAR 50 off additional hourly rate
+  ✓ 21-day advance booking
+  ✓ 6 guest passes per month
+  ✓ Peak hour priority access
+  ✓ 15% F&B discount
+  ✓ Dedicated locker
+  ✓ 1 complimentary coaching session per quarter
+
+─────────────────────────────────────────
+3. MEMBERSHIPS PAGE — ADD NEW CORPORATE TIER
+─────────────────────────────────────────
+Add a 4th membership card after Eagle. This is a new Corporate tier:
+
+CORPORATE TIER (NEW)
+- Tagline: "For teams, clients, and companies that take golf seriously."
+- Note below title: "Tailored packages available — contact us for pricing"
+- Price display: "From SAR 4,500 / month"
+- Benefits:
+  ✓ 20–50 hours per month (shared across team)
+  ✓ 2–6 named corporate users
+  ✓ Corporate logo displayed in-venue
+  ✓ Priority booking for all named users
+  ✓ Access to team building events & corporate tournaments
+  ✓ Dedicated account manager
+  ✓ Quarterly simulator access for corporate events
+  ✓ Branded simulator screen during sessions (logo overlay)
+- Button text: "Contact Us" (links to the contact page or opens email: mohamed@oasisgolfstudio.com)
+- Style: Make this card visually distinct — use a gold/premium border or background to signal it's the top tier
+
+─────────────────────────────────────────
+4. LESSONS PAGE — Update Coaching Rates
+─────────────────────────────────────────
+If there is a lessons/coaching pricing page, update or add these rates:
+
+- Initial Assessment (45 min): SAR 199
+  Description: "Private 1:1 assessment with a certified golf professional. Full swing analysis report included."
+
+- Adult 1:1 Lesson (60 min): SAR 449
+  Description: "Private lesson with a certified golf professional. TrackMan data report included."
+
+- Junior U16 Lesson (60 min): SAR 299
+  Description: "Private junior lesson with a certified golf professional. Suitable for beginners to competitive juniors."
+
+- Group Clinic (90 min, 4–8 players): SAR 199 per person
+  Description: "Small group coaching session. TrackMan data for each participant."
+
+- Monthly Coaching Package (4 × 60 min sessions): SAR 1,499
+  Description: "Four private lessons, scheduled flexibly across the month. Best value for committed improvers."
+
+─────────────────────────────────────────
+5. GENERAL NOTES FOR REPLIT
+─────────────────────────────────────────
+- Keep the OGS brand colors: dark background (#0A0A0A), orange accent (#FF6B1A), white text
+- The "Register Interest" button CTA should remain on Par, Birdie, Eagle tiers (links to contact/booking)
+- The Corporate tier button says "Contact Us" and links to mailto:mohamed@oasisgolfstudio.com
+- Add a small note under the membership grid: "All prices exclusive of 15% VAT"
+- On the memberships page, consider adding a comparison table showing what each tier includes side by side
+- Make sure the mobile view looks clean — the 4 cards should stack vertically on mobile
+
+─────────────────────────────────────────
+6. FOUNDING MEMBER BANNER (Optional — add if possible)
+─────────────────────────────────────────
+Add a prominent banner or badge on the memberships page:
+
+"🏌️ Founding Member Offer — Limited to 25 Spots"
+Body: "Lock in Eagle benefits at SAR 7,999 for your first 12 months. Only available before opening day."
+Button: "Become a Founding Member" → links to contact form or email
+Badge: Mark as "SOLD OUT" when spots fill up
+
+This is the single most important conversion element on the site right now. Make it visually striking — top of the memberships page, above the tier cards.

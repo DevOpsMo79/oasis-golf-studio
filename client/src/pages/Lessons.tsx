@@ -1,10 +1,45 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
-import { Video, UserCheck, TrendingUp } from "lucide-react";
+import { Video, UserCheck, TrendingUp, Check } from "lucide-react";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import heroImg from "@assets/coaching_1770819759951.jpg";
 
 export default function Lessons() {
+  const coachingRates = [
+    {
+      name: "Initial Assessment",
+      duration: "45 min",
+      price: "199",
+      description: "Private 1:1 assessment with a certified golf professional. Full swing analysis report included."
+    },
+    {
+      name: "Adult 1:1 Lesson",
+      duration: "60 min",
+      price: "449",
+      description: "Private lesson with a certified golf professional. TrackMan data report included."
+    },
+    {
+      name: "Junior U16 Lesson",
+      duration: "60 min",
+      price: "299",
+      description: "Private junior lesson with a certified golf professional. Suitable for beginners to competitive juniors."
+    },
+    {
+      name: "Group Clinic",
+      duration: "90 min, 4–8 players",
+      price: "199",
+      priceSuffix: "per person",
+      description: "Small group coaching session. TrackMan data for each participant."
+    },
+    {
+      name: "Monthly Coaching Package",
+      duration: "4 × 60 min sessions",
+      price: "1,499",
+      description: "Four private lessons, scheduled flexibly across the month. Best value for committed improvers.",
+      highlight: true
+    }
+  ];
+
   return (
     <div className="min-h-screen pb-24">
       <PageHeader 
@@ -42,7 +77,6 @@ export default function Lessons() {
             </div>
           </div>
           <div className="relative">
-             {/* Placeholder for coach/lesson image if available later */}
              <div className="aspect-square rounded-2xl bg-gradient-to-br from-card to-background border border-white/10 flex items-center justify-center p-8 text-center">
                 <div>
                   <UserCheck className="w-16 h-16 text-primary/40 mx-auto mb-4" />
@@ -52,6 +86,57 @@ export default function Lessons() {
              </div>
           </div>
         </div>
+
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-display font-bold mb-4">Coaching Rates</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Choose the program that fits your goals. All sessions include TrackMan data and personalized feedback.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+          {coachingRates.map((rate) => (
+            <div 
+              key={rate.name}
+              data-testid={`card-coaching-${rate.name.toLowerCase().replace(/\s+/g, "-")}`}
+              className={`rounded-2xl p-6 border flex flex-col ${
+                rate.highlight 
+                  ? "bg-card border-primary shadow-2xl shadow-primary/10 relative overflow-hidden" 
+                  : "bg-card border-white/5 hover:border-primary/30 transition-colors"
+              }`}
+            >
+              {rate.highlight && (
+                <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-primary text-primary-foreground text-[10px] font-bold uppercase tracking-wider">
+                  Best Value
+                </div>
+              )}
+              <h3 className="text-xl font-bold mb-1">{rate.name}</h3>
+              <p className="text-xs text-muted-foreground uppercase tracking-wider mb-4">{rate.duration}</p>
+              <div className="mb-4 flex items-baseline gap-2">
+                <span className="text-3xl font-bold">SAR {rate.price}</span>
+                {rate.priceSuffix && (
+                  <span className="text-muted-foreground text-sm">{rate.priceSuffix}</span>
+                )}
+              </div>
+              <p className="text-muted-foreground text-sm mb-6 flex-1">{rate.description}</p>
+              <Link href="/contact?subject=coaching">
+                <button 
+                  className={`w-full py-2.5 rounded-lg font-semibold text-sm transition-all ${
+                    rate.highlight 
+                      ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                      : "border border-primary text-primary hover:bg-primary hover:text-white"
+                  }`}
+                >
+                  Book Now
+                </button>
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-center text-muted-foreground text-sm mb-20">
+          All prices exclusive of 15% VAT
+        </p>
 
         <div className="text-center mb-12">
           <h2 className="text-3xl font-display font-bold mb-4">Programs</h2>
