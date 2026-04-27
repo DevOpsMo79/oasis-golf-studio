@@ -1,0 +1,50 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "4jKrlN-zAvzBb8BtPc2vn"
+uri = "file://screenshots/01-home.jpg"
+type = "image"
+title = "Home"
+
+[[outputs]]
+id = "TPfMgnsVB3Ee18bJVMHcH"
+uri = "file://screenshots/02-how-it-works.jpg"
+type = "image"
+title = "How It Works"
+
+[[outputs]]
+id = "GMhMZ_BUn1KPvpcsZQeIS"
+uri = "file://screenshots/03-rates.jpg"
+type = "image"
+title = "Rates"
+
+[[outputs]]
+id = "bfZb0KioRi-_qkg8wb5_b"
+uri = "file://screenshots/04-memberships.jpg"
+type = "image"
+title = "Memberships"
+
+[[outputs]]
+id = "AbEB8lyU7kT3qGWWTBBKN"
+uri = "file://screenshots/05-lessons.jpg"
+type = "image"
+title = "Lessons"
+
+[[outputs]]
+id = "Ux5QXT_ZD1rvP4a9a4pWI"
+uri = "file://screenshots/06-events.jpg"
+type = "image"
+title = "Events"
+
+[[outputs]]
+id = "JQOP0J3qJMfjhg9nsWsYt"
+uri = "file://screenshots/07-faq.jpg"
+type = "image"
+title = "FAQ"
+
+[[outputs]]
+id = "0HSeUElwiZ3fBvwZYykfL"
+uri = "file://screenshots/08-contact.jpg"
+type = "image"
+title = "Contact"
