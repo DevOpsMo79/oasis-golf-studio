@@ -3,35 +3,46 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import logoEng from "@assets/OGS_Brandin_Logo_v2.5_Eng_1770557429157.png";
-
-const navItems = [
-  { label: "Home", href: "/" },
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Rates", href: "/rates" },
-  { label: "Memberships", href: "/memberships" },
-  { label: "Lessons", href: "/lessons" },
-  { label: "Events", href: "/events" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Contact", href: "/contact" },
-];
+import { useLanguage } from "@/hooks/use-language";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [location] = useLocation();
+  const { lang, setLang, t } = useLanguage();
+
+  const navItems = [
+    { label: t("nav", "home"), href: "/" },
+    { label: t("nav", "howItWorks"), href: "/how-it-works" },
+    { label: t("nav", "rates"), href: "/rates" },
+    { label: t("nav", "memberships"), href: "/memberships" },
+    { label: t("nav", "lessons"), href: "/lessons" },
+    { label: t("nav", "events"), href: "/events" },
+    { label: t("nav", "faq"), href: "/faq" },
+    { label: t("nav", "contact"), href: "/contact" },
+  ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
+
+  const LangToggle = ({ className }: { className?: string }) => (
+    <button
+      onClick={() => setLang(lang === "en" ? "ar" : "en")}
+      className={cn(
+        "px-3 py-1.5 rounded-full border border-white/20 text-sm font-semibold hover:border-primary hover:text-primary transition-colors tracking-wide",
+        className
+      )}
+    >
+      {t("nav", "toggleLang")}
+    </button>
+  );
 
   return (
     <nav
@@ -46,7 +57,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-6">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -59,9 +70,10 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
+          <LangToggle />
           <Link href="/contact">
             <button className="px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25">
-              Register Interest
+              {t("nav", "registerInterest")}
             </button>
           </Link>
         </div>
@@ -93,9 +105,10 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
-          <Link href="/contact" className="mt-4">
+          <LangToggle className="text-lg px-5 py-2" />
+          <Link href="/contact" className="mt-2">
             <button className="px-8 py-3 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-all">
-              Register Interest
+              {t("nav", "registerInterest")}
             </button>
           </Link>
         </div>

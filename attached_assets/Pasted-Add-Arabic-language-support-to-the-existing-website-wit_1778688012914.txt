@@ -1,0 +1,118 @@
+Add Arabic language support to the existing website with MINIMUM code changes.
+
+DO NOT reinitialize the project.
+DO NOT redesign the website.
+DO NOT change routes, pricing logic, images, or existing layout structure unless required for language direction.
+Keep the current English site intact.
+
+GOAL
+Add a language toggle icon/button in the top navigation that lets users switch between:
+- English
+- Arabic
+
+When Arabic is selected:
+- All visible website text should display in Arabic.
+- Layout direction should switch to RTL.
+- Text alignment should switch to right.
+- Navigation/menu alignment should feel natural in Arabic.
+- Cards, sections, buttons, pricing, FAQs, forms, and footer should all be Arabic.
+- Keep the same page structure, sections, images, spacing, and design.
+
+When English is selected:
+- Keep current English text.
+- Layout direction should be LTR.
+- Text alignment should remain left.
+
+IMPLEMENTATION REQUIREMENTS
+1) Create a simple i18n system without adding a heavy dependency unless absolutely necessary.
+2) Prefer a centralized translation file, for example:
+   /content/translations.ts
+   with:
+   - en
+   - ar
+
+3) Add a language state/provider or lightweight hook:
+   - Default language: English
+   - Toggle: EN / عربي
+   - Persist selection in localStorage
+   - Set document direction:
+     English: dir="ltr"
+     Arabic: dir="rtl"
+   - Set HTML lang:
+     English: lang="en"
+     Arabic: lang="ar"
+
+4) Add a language toggle button/icon in the navbar:
+   - Visible on desktop and mobile.
+   - Suggested label:
+     English mode: “عربي”
+     Arabic mode: “EN”
+   - Keep it small and premium.
+   - Do not disrupt the navbar layout.
+
+5) Translation quality:
+   Use natural, professional Arabic suitable for Riyadh/KSA, not literal machine translation.
+   Keep brand name as:
+   “Oasis Golf Studio”
+   Do NOT translate the brand name.
+   Do NOT use “Oasis” alone; always use “Oasis Golf Studio”.
+
+6) Arabic style guidance:
+   - Use clear Modern Standard Arabic with premium business tone.
+   - Example translations:
+     “Performance First. Convenience Always.”
+     -> “الأداء أولاً. والراحة دائماً.”
+     “Book a Bay”
+     -> “احجز باي”
+     “Register Interest”
+     -> “سجّل اهتمامك”
+     “Memberships”
+     -> “العضويات”
+     “Rates”
+     -> “الأسعار”
+     “How It Works”
+     -> “آلية العمل”
+     “Lessons”
+     -> “التدريب”
+     “Events”
+     -> “الفعاليات”
+     “Contact”
+     -> “تواصل معنا”
+
+7) Pages to translate:
+   - Home
+   - How It Works
+   - Rates
+   - Memberships
+   - Lessons
+   - Events
+   - FAQ
+   - Contact
+
+8) Forms:
+   Translate labels/placeholders/buttons in Arabic mode.
+   Keep form functionality unchanged.
+
+9) Memberships:
+   Preserve exact pricing and benefits.
+   Translate benefits naturally into Arabic.
+   Keep SAR pricing format consistent.
+
+10) Rates:
+   Preserve exact pricing, peak/off-peak logic, and time formatting.
+   Translate labels naturally.
+   Keep SAR as “SAR” or use “ر.س” only if already consistent across the site.
+
+QUALITY CHECKS
+- No broken layout in RTL.
+- No mixed alignment issues.
+- No missing translations showing raw keys.
+- No standalone “Oasis” references.
+- Existing English version should look unchanged.
+- Mobile menu should still work in both languages.
+
+OUTPUT
+When complete:
+- List files modified.
+- Explain where translations are stored.
+- Confirm that language toggle works and persists selection.

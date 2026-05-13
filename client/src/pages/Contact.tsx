@@ -9,33 +9,26 @@ import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail } from "lucide-react";
 import interiorImg from "@assets/img01_1770819759953.jpg";
 import type { ContactInput } from "@shared/routes";
+import { useLanguage } from "@/hooks/use-language";
 
 export default function Contact() {
+  const { t } = useLanguage();
   const mutation = useSubmitContact();
-  
+
   const form = useForm<ContactInput>({
     resolver: zodResolver(insertContactSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    },
+    defaultValues: { name: "", email: "", phone: "", message: "" },
   });
 
   function onSubmit(data: ContactInput) {
-    mutation.mutate(data, {
-      onSuccess: () => {
-        form.reset();
-      }
-    });
+    mutation.mutate(data, { onSuccess: () => form.reset() });
   }
 
   return (
     <div className="min-h-screen pb-24">
-      <PageHeader 
-        title="Contact Us" 
-        description="Get in touch for bookings, events, or general inquiries."
+      <PageHeader
+        title={t("contact", "pageTitle")}
+        description={t("contact", "pageDesc")}
         image={interiorImg}
         placeholderId={5}
       />
@@ -45,34 +38,32 @@ export default function Contact() {
           {/* Info Side */}
           <div className="space-y-12">
             <div>
-              <h2 className="text-3xl font-display font-bold mb-6">Visit Oasis Golf Studio</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                We're located in the heart of Riyadh. Come visit us for a tour of the facility or just to say hello.
-              </p>
+              <h2 className="text-3xl font-display font-bold mb-6">{t("contact", "visitTitle")}</h2>
+              <p className="text-muted-foreground text-lg leading-relaxed">{t("contact", "visitDesc")}</p>
             </div>
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-card rounded-lg border border-white/10 text-primary"><MapPin className="w-6 h-6" /></div>
                 <div>
-                  <h4 className="font-bold text-lg mb-1">Address</h4>
-                  <p className="text-muted-foreground">Location being finalized</p>
+                  <h4 className="font-bold text-lg mb-1">{t("contact", "addressLabel")}</h4>
+                  <p className="text-muted-foreground">{t("contact", "addressValue")}</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-card rounded-lg border border-white/10 text-primary"><Phone className="w-6 h-6" /></div>
                 <div>
-                  <h4 className="font-bold text-lg mb-1">Phone</h4>
+                  <h4 className="font-bold text-lg mb-1">{t("contact", "phoneLabel")}</h4>
                   <p className="text-muted-foreground">+966 53 487 1043</p>
-                  <p className="text-sm text-primary mt-1">WhatsApp Available</p>
+                  <p className="text-sm text-primary mt-1">{t("contact", "whatsapp")}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-card rounded-lg border border-white/10 text-primary"><Mail className="w-6 h-6" /></div>
                 <div>
-                  <h4 className="font-bold text-lg mb-1">Email</h4>
+                  <h4 className="font-bold text-lg mb-1">{t("contact", "emailLabel")}</h4>
                   <p className="text-muted-foreground">info@oasisgolfstudio.com</p>
                 </div>
               </div>
@@ -80,17 +71,17 @@ export default function Contact() {
 
             {/* Map Placeholder */}
             <div className="bg-card h-64 rounded-2xl border border-white/5 flex items-center justify-center relative overflow-hidden">
-               <div className="absolute inset-0 bg-neutral-800 opacity-50"></div>
-               <span className="relative z-10 text-muted-foreground font-medium flex items-center gap-2">
-                 <MapPin className="w-5 h-5" /> Map Integration Coming Soon
-               </span>
+              <div className="absolute inset-0 bg-neutral-800 opacity-50"></div>
+              <span className="relative z-10 text-muted-foreground font-medium flex items-center gap-2">
+                <MapPin className="w-5 h-5" /> {t("contact", "mapPlaceholder")}
+              </span>
             </div>
           </div>
 
           {/* Form Side */}
           <div className="bg-card p-8 md:p-10 rounded-3xl border border-white/5 shadow-2xl">
-            <h3 className="text-2xl font-bold mb-8">Send a Message</h3>
-            
+            <h3 className="text-2xl font-bold mb-8">{t("contact", "formTitle")}</h3>
+
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
@@ -98,24 +89,24 @@ export default function Contact() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Name</FormLabel>
+                      <FormLabel>{t("contact", "nameLabel")}</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your Name" {...field} className="bg-background/50 border-white/10 h-12" />
+                        <Input placeholder={t("contact", "namePlaceholder")} {...field} className="bg-background/50 border-white/10 h-12" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
-                
+
                 <div className="grid grid-cols-2 gap-4">
                   <FormField
                     control={form.control}
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email</FormLabel>
+                        <FormLabel>{t("contact", "emailFieldLabel")}</FormLabel>
                         <FormControl>
-                          <Input placeholder="hello@example.com" {...field} className="bg-background/50 border-white/10 h-12" />
+                          <Input placeholder={t("contact", "emailPlaceholder")} {...field} className="bg-background/50 border-white/10 h-12" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -126,9 +117,9 @@ export default function Contact() {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Phone (Optional)</FormLabel>
+                        <FormLabel>{t("contact", "phoneFieldLabel")}</FormLabel>
                         <FormControl>
-                          <Input placeholder="+966..." {...field} value={field.value || ''} className="bg-background/50 border-white/10 h-12" />
+                          <Input placeholder="+966..." {...field} value={field.value || ""} className="bg-background/50 border-white/10 h-12" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -141,21 +132,21 @@ export default function Contact() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel>{t("contact", "messageLabel")}</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Tell us about your inquiry..." {...field} className="bg-background/50 border-white/10 min-h-[150px]" />
+                        <Textarea placeholder={t("contact", "messagePlaceholder")} {...field} className="bg-background/50 border-white/10 min-h-[150px]" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
 
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   disabled={mutation.isPending}
                   className="w-full py-4 rounded-xl bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {mutation.isPending ? "Sending..." : "Send Message"}
+                  {mutation.isPending ? t("contact", "sendingBtn") : t("contact", "sendBtn")}
                 </button>
               </form>
             </Form>
