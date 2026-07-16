@@ -26,7 +26,7 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
       {/* Photo layer — shown on top of grid when image is supplied */}
       {image && (
         <div className="absolute inset-0">
-          <img src={image} alt={title} className="w-full h-full object-cover" />
+          <img src={image} alt={title} className="w-full h-full object-contain" />
         </div>
       )}
 
