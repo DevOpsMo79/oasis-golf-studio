@@ -13,7 +13,7 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
       className="relative w-full overflow-hidden"
       style={{ aspectRatio: "16/9", maxHeight: "520px", minHeight: "220px" }}
     >
-      {/* Warm dark grid — always present as base layer */}
+      {/* Warm dark grid — base layer, visible only where photo doesn't cover */}
       <div
         className="absolute inset-0"
         style={{ background: "linear-gradient(135deg, #1a1510 0%, #2a2118 40%, #1c1c1c 100%)" }}
@@ -26,29 +26,46 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
         }}
       />
 
-      {/* Photo layer */}
       {image && (
-        <div className="absolute inset-0">
-          <img src={image} alt={title} className="w-full h-full object-cover" />
-        </div>
+        <>
+          {/* Blurred full-bleed background — fills letterbox bars seamlessly */}
+          <div className="absolute inset-0">
+            <img
+              src={image}
+              alt=""
+              className="w-full h-full object-cover blur-xl opacity-60"
+              aria-hidden="true"
+            />
+          </div>
+
+          {/* Sharp contained photo — full image, never cropped */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-contain"
+              style={{ imageRendering: "auto" }}
+            />
+          </div>
+        </>
       )}
 
-      {/* Dark scrim over the whole image so text is always legible */}
-      {image && <div className="absolute inset-0 bg-black/50" />}
+      {/* Very light uniform scrim so text stays legible without killing the photo */}
+      {image && <div className="absolute inset-0 bg-black/20" />}
 
       {/* Fade top */}
       <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-background/80 to-transparent" />
 
-      {/* Fade bottom — deeper so text sits on a solid dark base */}
-      <div className="absolute bottom-0 left-0 right-0 h-3/5 bg-gradient-to-t from-background via-background/80 to-transparent" />
+      {/* Deep bottom fade — creates a solid dark shelf for the text */}
+      <div className="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-background via-background/90 to-transparent" />
 
-      {/* Text content — pinned to bottom */}
-      <div className="absolute bottom-6 sm:bottom-8 md:bottom-12 left-0 right-0 z-10 container px-4 text-center">
+      {/* Text content — pushed to the very bottom edge */}
+      <div className="absolute bottom-0 left-0 right-0 z-10 container px-4 text-center pb-3 sm:pb-4 md:pb-6">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl md:text-6xl font-display font-bold mb-2 md:mb-4 text-white drop-shadow-lg"
+          className="text-3xl sm:text-4xl md:text-6xl font-display font-bold mb-1 md:mb-2 text-white drop-shadow-lg"
         >
           {title}
         </motion.h1>
