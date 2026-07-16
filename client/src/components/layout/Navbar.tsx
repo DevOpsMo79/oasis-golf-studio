@@ -16,6 +16,7 @@ export function Navbar() {
     { label: t("nav", "howItWorks"), href: "/how-it-works" },
     { label: t("nav", "rates"), href: "/rates" },
     { label: t("nav", "memberships"), href: "/memberships" },
+    { label: t("nav", "clubServices"), href: "/club-services" },
     { label: t("nav", "lessons"), href: "/lessons" },
     { label: t("nav", "events"), href: "/events" },
     { label: t("nav", "faq"), href: "/faq" },

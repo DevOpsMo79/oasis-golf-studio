@@ -36,6 +36,7 @@ export function Footer() {
               <li><Link href="/how-it-works" className="text-muted-foreground hover:text-primary transition-colors">{t("nav", "howItWorks")}</Link></li>
               <li><Link href="/rates" className="text-muted-foreground hover:text-primary transition-colors">{t("footer", "ratesBooking")}</Link></li>
               <li><Link href="/memberships" className="text-muted-foreground hover:text-primary transition-colors">{t("nav", "memberships")}</Link></li>
+              <li><Link href="/club-services" className="text-muted-foreground hover:text-primary transition-colors">{t("nav", "clubServices")}</Link></li>
             </ul>
           </div>
 

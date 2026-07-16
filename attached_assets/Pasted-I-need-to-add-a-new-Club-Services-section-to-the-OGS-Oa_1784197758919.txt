@@ -1,0 +1,67 @@
+I need to add a new "Club Services" section to the OGS (Oasis Golf Studio) website, showcasing the club fitting, regripping, and repair capability that will operate out of our dedicated Fitting Studio space (next to the VIP TrackMan 4 bay).
+─────────────────────────────────────────
+
+NAVIGATION — Add New Menu Item
+─────────────────────────────────────────
+Add "Club Services" to the main nav (between "Memberships" and "Lessons," or wherever fits best structurally). This should link to a new dedicated section/page.
+
+─────────────────────────────────────────
+2. NEW SECTION — Club Services Overview
+─────────────────────────────────────────
+Headline: "Club Services"
+Subheadline: "Precision fitting, regripping, and repair — performed in our dedicated Fitting Studio."
+Intro copy:
+"Great equipment is only as good as its fit. Our Fitting Studio, set beside the VIP TrackMan 4 bay, is built for golfers who want their clubs dialed in — not guessed at. From regripping to full custom builds, every service is performed with tour-level attention to detail."
+Add a "Coming Soon" badge or tag near the section header — this offering is launching alongside the facility but details (partner, pricing) are still being finalized, so keep the tone aspirational/premium rather than transactional at this stage.
+─────────────────────────────────────────
+3. SERVICE CARDS — Add 3 Cards Under the Section
+─────────────────────────────────────────
+CARD 1: Club Regripping
+
+Icon: grip/club icon
+Description: "Fresh grips restore feel, traction, and control. Choose from a curated selection of cord, rubber, and hybrid grips in standard, midsize, and oversize options. Most sets completed same-day."
+Bullet points:
+✓ Wide selection of premium grip brands
+✓ Custom sizing and texture matched to your game
+✓ Free grip check with any regripping service
+
+CARD 2: Club Repair & Custom Builds
+
+Icon: wrench/tool icon
+Description: "From shaft repairs to full custom builds, our team restores, refreshes, or upgrades your equipment with precision and care."
+Bullet points:
+✓ Broken shaft & ferrule replacement
+✓ Swingweight adjustments
+✓ Full custom club builds
+✓ Club diagnostics & performance setup recommendations
+
+CARD 3: Loft & Lie Adjustments
+
+Icon: angle/gauge icon
+Description: "Every club shifts over time — even new sets. Precision loft and lie adjustments ensure consistent ball flight, accuracy, and distance control, performed on professional-grade equipment."
+Bullet points:
+✓ Certified adjustments on industry-standard tools
+✓ Consistent ball flight and tighter dispersion
+✓ Often paired with regripping or a full fitting session
+
+─────────────────────────────────────────
+4. CTA — Below the Cards
+─────────────────────────────────────────
+Button text: "Register Interest"
+Links to: contact form or mailto:mohamed@oasisgolfstudio.com
+Subtext under button: "Club Services launch alongside OGS in Q4 2026. Register your interest to be notified first."
+─────────────────────────────────────────
+5. VISUAL STYLE
+─────────────────────────────────────────
+
+Match existing OGS brand: dark background (#0A0A0A), orange accent (#FF6B1A), white text
+Use the same card style/grid layout as the Memberships section for consistency (3 cards in a row on desktop, stacked on mobile)
+If a section image/hero is needed, use a placeholder for a fitting studio workspace shot (bays, tools, workstation) — I'll supply the final image separately
+
+─────────────────────────────────────────
+6. GENERAL NOTES
+─────────────────────────────────────────
+
+Do NOT include specific pricing yet — this is intentional, pricing/partner details are still being finalized
+Do NOT name any specific fitting partner or brand in the copy
+Keep tone premium and performance-focused, consistent with the rest of the site (avoid generic retail-shop language)
