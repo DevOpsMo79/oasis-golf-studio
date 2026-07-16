@@ -7,15 +7,14 @@ interface PageHeaderProps {
   placeholderId?: number;
 }
 
-export function PageHeader({ title, description }: PageHeaderProps) {
+export function PageHeader({ title, description, image }: PageHeaderProps) {
   return (
     <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16/9", maxHeight: "520px" }}>
-      {/* Warm dark grid background */}
+      {/* Warm dark grid — always present as base layer */}
       <div
         className="absolute inset-0"
         style={{ background: "linear-gradient(135deg, #1a1510 0%, #2a2118 40%, #1c1c1c 100%)" }}
       />
-      {/* Grid lines */}
       <div
         className="absolute inset-0 opacity-20"
         style={{
@@ -23,6 +22,14 @@ export function PageHeader({ title, description }: PageHeaderProps) {
             "repeating-linear-gradient(90deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px), repeating-linear-gradient(0deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px)",
         }}
       />
+
+      {/* Photo layer — shown on top of grid when image is supplied */}
+      {image && (
+        <div className="absolute inset-0">
+          <img src={image} alt={title} className="w-full h-full object-cover" />
+        </div>
+      )}
+
       {/* Fade top */}
       <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-background/70 to-transparent" />
       {/* Fade bottom */}
