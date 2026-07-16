@@ -13,7 +13,7 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
       className="relative w-full overflow-hidden"
       style={{ aspectRatio: "16/9", maxHeight: "520px", minHeight: "220px" }}
     >
-      {/* Warm dark grid — base layer, visible only where photo doesn't cover */}
+      {/* Warm dark grid — base layer */}
       <div
         className="absolute inset-0"
         style={{ background: "linear-gradient(135deg, #1a1510 0%, #2a2118 40%, #1c1c1c 100%)" }}
@@ -28,39 +28,39 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
 
       {image && (
         <>
-          {/* Blurred full-bleed background — fills letterbox bars seamlessly */}
-          <div className="absolute inset-0">
-            <img
-              src={image}
-              alt=""
-              className="w-full h-full object-cover blur-xl opacity-60"
-              aria-hidden="true"
-            />
-          </div>
-
-          {/* Sharp contained photo — full image, never cropped */}
-          <div className="absolute inset-0 flex items-center justify-center">
+          {/* Mobile: cover fills banner, focus on top so subjects sit above text zone */}
+          <div className="absolute inset-0 md:hidden">
             <img
               src={image}
               alt={title}
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover object-top"
+              style={{ imageRendering: "auto" }}
+            />
+          </div>
+
+          {/* Desktop: full photo visible, anchored to bottom */}
+          <div className="absolute inset-0 hidden md:flex items-end justify-center">
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-contain object-bottom"
               style={{ imageRendering: "auto" }}
             />
           </div>
         </>
       )}
 
-      {/* Very light uniform scrim so text stays legible without killing the photo */}
+      {/* Light scrim for extra text safety */}
       {image && <div className="absolute inset-0 bg-black/20" />}
 
       {/* Fade top */}
       <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-background/80 to-transparent" />
 
-      {/* Deep bottom fade — creates a solid dark shelf for the text */}
-      <div className="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-background via-background/90 to-transparent" />
+      {/* Deep bottom fade — 75% of banner fades to solid dark */}
+      <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-t from-background via-background/95 to-transparent" />
 
-      {/* Text content — pushed to the very bottom edge */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 container px-4 text-center pb-3 sm:pb-4 md:pb-6">
+      {/* Text content — pinned to bottom quarter */}
+      <div className="absolute bottom-2 sm:bottom-4 md:bottom-8 left-0 right-0 z-10 container px-4 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
