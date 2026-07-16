@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { IMAGE_PLACEHOLDER_MODE } from "@/lib/config";
-import { ImagePlaceholder } from "./ImagePlaceholder";
 
 interface PageHeaderProps {
   title: string;
@@ -9,33 +7,30 @@ interface PageHeaderProps {
   placeholderId?: number;
 }
 
-export function PageHeader({ title, description, image, placeholderId }: PageHeaderProps) {
-  const showPlaceholder = IMAGE_PLACEHOLDER_MODE && placeholderId !== undefined;
-
+export function PageHeader({ title, description }: PageHeaderProps) {
   return (
-    <div className="relative flex items-center justify-center overflow-hidden bg-background">
-      {/* Background Image with Overlay */}
-      {image && !showPlaceholder && (
-        <div className="relative w-full z-0 flex items-center justify-center bg-background h-[40vh] md:h-[50vh] lg:h-[60vh] max-h-[600px]">
-          <img src={image} alt={title} className="max-w-full max-h-full object-contain" />
-          <div className="absolute inset-0 bg-background/20 bg-gradient-to-t from-background to-transparent" />
-        </div>
-      )}
+    <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16/9", maxHeight: "520px" }}>
+      {/* Warm dark grid background */}
+      <div
+        className="absolute inset-0"
+        style={{ background: "linear-gradient(135deg, #1a1510 0%, #2a2118 40%, #1c1c1c 100%)" }}
+      />
+      {/* Grid lines */}
+      <div
+        className="absolute inset-0 opacity-20"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(90deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px), repeating-linear-gradient(0deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px)",
+        }}
+      />
+      {/* Fade top */}
+      <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-background/70 to-transparent" />
+      {/* Fade bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
 
-      {showPlaceholder && (
-        <div className="absolute inset-0 z-0 h-[40vh] md:h-[50vh] lg:h-[60vh] max-h-[600px]">
-          <ImagePlaceholder 
-            id={placeholderId} 
-            className="h-full rounded-none border-none bg-background/50" 
-            section="Page Header"
-          />
-          <div className="absolute inset-0 bg-background/20" />
-        </div>
-      )}
-      
-      {/* Content */}
-      <div className="container absolute z-10 px-4 text-center bottom-8 md:bottom-12">
-        <motion.h1 
+      {/* Text content — pinned to bottom */}
+      <div className="absolute bottom-8 md:bottom-12 left-0 right-0 z-10 container px-4 text-center">
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -44,7 +39,7 @@ export function PageHeader({ title, description, image, placeholderId }: PageHea
           {title}
         </motion.h1>
         {description && (
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
