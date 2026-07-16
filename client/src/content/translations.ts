@@ -227,7 +227,7 @@ const en = {
     a6: "Absolutely! We welcome golfers of all ages. Children under 12 must be accompanied by an adult.",
   },
   clubServices: {
-    badge: "Coming Soon",
+    badge: "Future Phase",
     pageTitle: "Club Services",
     subheadline: "Precision fitting, regripping, and repair — performed in our dedicated Fitting Studio.",
     intro: "Great equipment is only as good as its fit. Our Fitting Studio, set beside the VIP TrackMan 4 bay, is built for golfers who want their clubs dialled in — not guessed at. From regripping to full custom builds, every service is performed with tour-level attention to detail.",
@@ -248,7 +248,7 @@ const en = {
     card3b2: "Consistent ball flight and tighter dispersion",
     card3b3: "Often paired with regripping or a full fitting session",
     ctaBtn: "Register Interest",
-    ctaNote: "Club Services launch alongside OGS in Q4 2026. Register your interest to be notified first.",
+    ctaNote: "Coming to OGS in a future phase. Register your interest and we'll let you know as soon as it's ready.",
   },
   contact: {
     pageTitle: "Contact Us",
@@ -501,7 +501,7 @@ const ar: typeof en = {
     a6: "بالتأكيد! نرحب بلاعبي الغولف من جميع الأعمار. يجب أن يكون الأطفال دون سن ١٢ عاماً برفقة بالغ.",
   },
   clubServices: {
-    badge: "قريباً",
+    badge: "مرحلة قادمة",
     pageTitle: "خدمات العصي",
     subheadline: "ملاءمة دقيقة وإعادة تغليف وإصلاح — تُنجز في استوديو الملاءمة المخصص لدينا.",
     intro: "المعدات الرائعة لا تكون في أفضل حالاتها إلا حين تكون مناسبة تماماً. استوديو الملاءمة لدينا، المجاور لبايVIP TrackMan 4، مصمم للاعبين الذين يريدون عصيهم معايرة بدقة — لا تخميناً. من إعادة التغليف إلى التصنيع الكامل المخصص، كل خدمة تُنجز باهتمام على مستوى الجولة الاحترافية.",
@@ -522,7 +522,7 @@ const ar: typeof en = {
     card3b2: "مسار كرة ثابت وتشتت أضيق",
     card3b3: "غالباً ما يُقترن بإعادة التغليف أو جلسة ملاءمة كاملة",
     ctaBtn: "سجّل اهتمامك",
-    ctaNote: "تُطلق خدمات العصي مع OGS في الربع الرابع ٢٠٢٦. سجّل اهتمامك لتكون أول من يُعلَم.",
+    ctaNote: "قادمة إلى OGS في مرحلة مستقبلية. سجّل اهتمامك وسنُعلمك فور أن تصبح جاهزة.",
   },
   contact: {
     pageTitle: "تواصل معنا",

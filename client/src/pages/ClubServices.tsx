@@ -1,6 +1,13 @@
 import { Link } from "wouter";
-import { Wrench, Gauge, Check, Sparkles } from "lucide-react";
+import { Wrench, Gauge, Check, Sparkles, Camera } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
+
+/* ─── Fitting Studio hero image ───────────────────────────────────────────
+   Drop the final image here once supplied:
+   import fittingStudioImg from "@assets/fitting_studio.jpg";
+   Then swap the placeholder div below for:
+   <img src={fittingStudioImg} alt="Fitting Studio" className="w-full h-full object-cover" />
+   ────────────────────────────────────────────────────────────────────────── */
 
 export default function ClubServices() {
   const { t } = useLanguage();
@@ -27,10 +34,25 @@ export default function ClubServices() {
   ] as const;
 
   return (
-    <div className="min-h-screen pb-24 pt-32">
+    <div className="min-h-screen pb-24">
+      {/* Hero Banner */}
+      <div className="relative w-full aspect-video max-h-[520px] overflow-hidden bg-neutral-900">
+        {/* Placeholder — swap for <img> when final photo is supplied */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4"
+          style={{ background: "linear-gradient(135deg, #1a1510 0%, #2a2118 40%, #1c1c1c 100%)" }}>
+          {/* Simulated architectural warmth */}
+          <div className="absolute inset-0 opacity-20"
+            style={{ backgroundImage: "repeating-linear-gradient(90deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px), repeating-linear-gradient(0deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px)" }} />
+          <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
+          <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-background/60 to-transparent" />
+          <Camera className="w-12 h-12 text-white/20 relative z-10" />
+          <p className="text-white/30 text-sm font-medium relative z-10 tracking-widest uppercase">Fitting Studio — Image Coming Soon</p>
+        </div>
+      </div>
+
       <div className="container px-4 md:px-6">
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-16 pt-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-bold uppercase tracking-wider mb-6">
             <Sparkles className="w-3.5 h-3.5" />
             {t("clubServices", "badge")}
