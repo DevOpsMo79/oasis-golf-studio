@@ -9,7 +9,10 @@ interface PageHeaderProps {
 
 export function PageHeader({ title, description, image }: PageHeaderProps) {
   return (
-    <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16/9", maxHeight: "520px" }}>
+    <div
+      className="relative w-full overflow-hidden"
+      style={{ aspectRatio: "16/9", maxHeight: "520px", minHeight: "220px" }}
+    >
       {/* Warm dark grid — always present as base layer */}
       <div
         className="absolute inset-0"
@@ -23,25 +26,29 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
         }}
       />
 
-      {/* Photo layer — shown on top of grid when image is supplied */}
+      {/* Photo layer */}
       {image && (
         <div className="absolute inset-0">
           <img src={image} alt={title} className="w-full h-full object-cover" />
         </div>
       )}
 
+      {/* Dark scrim over the whole image so text is always legible */}
+      {image && <div className="absolute inset-0 bg-black/50" />}
+
       {/* Fade top */}
-      <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-background/70 to-transparent" />
-      {/* Fade bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-background/80 to-transparent" />
+
+      {/* Fade bottom — deeper so text sits on a solid dark base */}
+      <div className="absolute bottom-0 left-0 right-0 h-3/5 bg-gradient-to-t from-background via-background/80 to-transparent" />
 
       {/* Text content — pinned to bottom */}
-      <div className="absolute bottom-8 md:bottom-12 left-0 right-0 z-10 container px-4 text-center">
+      <div className="absolute bottom-6 sm:bottom-8 md:bottom-12 left-0 right-0 z-10 container px-4 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-6xl font-display font-bold mb-4 text-white"
+          className="text-3xl sm:text-4xl md:text-6xl font-display font-bold mb-2 md:mb-4 text-white drop-shadow-lg"
         >
           {title}
         </motion.h1>
@@ -50,7 +57,7 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto drop-shadow"
           >
             {description}
           </motion.p>
