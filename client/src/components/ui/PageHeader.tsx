@@ -9,77 +9,89 @@ interface PageHeaderProps {
 
 export function PageHeader({ title, description, image }: PageHeaderProps) {
   return (
-    <div
-      className="relative w-full overflow-hidden"
-      style={{ aspectRatio: "16/9", maxHeight: "520px", minHeight: "220px" }}
-    >
-      {/* Warm dark grid — base layer, visible only where photo doesn't cover */}
+    <>
+      {/* ——— Banner ——— photo only, no text overlay */}
       <div
-        className="absolute inset-0"
-        style={{ background: "linear-gradient(135deg, #1a1510 0%, #2a2118 40%, #1c1c1c 100%)" }}
-      />
-      <div
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(90deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px), repeating-linear-gradient(0deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px)",
-        }}
-      />
+        className="relative w-full overflow-hidden"
+        style={{ aspectRatio: "16/9", maxHeight: "520px", minHeight: "220px" }}
+      >
+        {/* Warm dark grid base */}
+        <div
+          className="absolute inset-0"
+          style={{ background: "linear-gradient(135deg, #1a1510 0%, #2a2118 40%, #1c1c1c 100%)" }}
+        />
+        <div
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage:
+              "repeating-linear-gradient(90deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px), repeating-linear-gradient(0deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px)",
+          }}
+        />
 
-      {image && (
-        <>
-          {/* Blurred full-bleed background — fills letterbox bars seamlessly */}
-          <div className="absolute inset-0">
-            <img
-              src={image}
-              alt=""
-              className="w-full h-full object-cover blur-xl opacity-60"
-              aria-hidden="true"
-            />
-          </div>
+        {image && (
+          <>
+            {/* Blurred backdrop to fill any letter-box gaps */}
+            <div className="absolute inset-0">
+              <img
+                src={image}
+                alt=""
+                className="w-full h-full object-cover blur-xl opacity-60"
+                aria-hidden="true"
+              />
+            </div>
+            {/* Sharp full-image, never cropped — shifted right to keep OGS logo visible */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <img
+                src={image}
+                alt={title}
+                className="w-full h-full object-contain"
+                style={{ imageRendering: "auto", objectPosition: "80% center" }}
+              />
+            </div>
+          </>
+        )}
 
-          {/* Sharp contained photo — full image, never cropped */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <img
-              src={image}
-              alt={title}
-              className="w-full h-full object-contain"
-              style={{ imageRendering: "auto" }}
-            />
-          </div>
-        </>
-      )}
+        {/* Very light scrim for photo depth */}
+        {image && <div className="absolute inset-0 bg-black/15" />}
 
-      {/* Very light uniform scrim so text stays legible without killing the photo */}
-      {image && <div className="absolute inset-0 bg-black/20" />}
+        {/* Top fade for navbar */}
+        <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-background/80 to-transparent" />
 
-      {/* Fade top */}
-      <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-background/80 to-transparent" />
+        {/* Soft bottom fade into the title band */}
+        <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-background to-transparent" />
+      </div>
 
-      {/* Deep bottom fade — creates a solid dark shelf for the text */}
-      <div className="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-background via-background/90 to-transparent" />
-
-      {/* Text content — pushed to the very bottom edge */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 container px-4 text-center pb-3 sm:pb-4 md:pb-6">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl md:text-6xl font-display font-bold mb-1 md:mb-2 text-white drop-shadow-lg"
-        >
-          {title}
-        </motion.h1>
-        {description && (
-          <motion.p
+      {/* ——— Title band ——— sits below the banner in solid dark space */}
+      <div className="relative bg-background pt-6 sm:pt-8 pb-10 sm:pb-14 md:pb-16">
+        {/* Subtle grid texture for continuity */}
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage:
+              "repeating-linear-gradient(90deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px), repeating-linear-gradient(0deg, #c8a96e 0px, transparent 1px, transparent 80px, #c8a96e 81px)",
+          }}
+        />
+        <div className="container px-4 text-center relative z-10">
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto drop-shadow"
+            transition={{ duration: 0.6 }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-2 md:mb-3 text-white"
           >
-            {description}
-          </motion.p>
-        )}
+            {title}
+          </motion.h1>
+          {description && (
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
+            >
+              {description}
+            </motion.p>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -155,7 +155,7 @@ const en = {
     featCorpH: "Branded simulator screen during sessions (logo overlay)",
   },
   lessons: {
-    pageTitle: "Why Train at Oasis Golf Studio?",
+    pageTitle: "Coaching at Oasis Golf Studio",
     pageDesc: "Data-driven instruction from certified professionals.",
     sectionTitle: "Why Train at Oasis Golf Studio?",
     sectionDesc: "Traditional ranges leave you guessing. At Oasis Golf Studio, we use TrackMan dual-radar technology to measure every aspect of your swing. Our coaches combine this data with high-speed video analysis to make precise adjustments that stick.",
@@ -429,7 +429,7 @@ const ar: typeof en = {
     featCorpH: "شاشة محاكي مع علامة الشركة أثناء الجلسات (طبقة الشعار)",
   },
   lessons: {
-    pageTitle: "لماذا تتدرّب في Oasis Golf Studio؟",
+    pageTitle: "التدريب في Oasis Golf Studio",
     pageDesc: "تعليم مبني على البيانات من محترفين معتمدين.",
     sectionTitle: "لماذا تتدرّب في Oasis Golf Studio؟",
     sectionDesc: "ملاعب التدريب التقليدية تتركك تخمّن. في Oasis Golf Studio، نستخدم تقنية TrackMan للرادار المزدوج لقياس كل جانب من جوانب سوينغك. يجمع مدربونا هذه البيانات مع تحليل الفيديو عالي السرعة لإجراء تعديلات دقيقة ومستدامة.",
