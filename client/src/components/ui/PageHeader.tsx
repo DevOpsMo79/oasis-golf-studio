@@ -26,46 +26,34 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
         }}
       />
 
+      {/* Full-bleed photo with upward focal point — subjects sit high, lower area is background */}
       {image && (
-        <>
-          {/* Mobile: cover fills banner, focus on top so subjects sit above text zone */}
-          <div className="absolute inset-0 md:hidden">
-            <img
-              src={image}
-              alt={title}
-              className="w-full h-full object-cover object-top"
-              style={{ imageRendering: "auto" }}
-            />
-          </div>
-
-          {/* Desktop: full photo visible, anchored to bottom */}
-          <div className="absolute inset-0 hidden md:flex items-end justify-center">
-            <img
-              src={image}
-              alt={title}
-              className="w-full h-full object-contain object-bottom"
-              style={{ imageRendering: "auto" }}
-            />
-          </div>
-        </>
+        <div className="absolute inset-0">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover"
+            style={{ objectPosition: "center 15%", imageRendering: "auto" }}
+          />
+        </div>
       )}
 
-      {/* Light scrim for extra text safety */}
+      {/* Light uniform scrim */}
       {image && <div className="absolute inset-0 bg-black/20" />}
 
-      {/* Fade top */}
-      <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-background/80 to-transparent" />
+      {/* Top fade — protects navbar */}
+      <div className="absolute top-0 left-0 right-0 h-1/5 bg-gradient-to-b from-background/80 to-transparent" />
 
-      {/* Deep bottom fade — 75% of banner fades to solid dark */}
-      <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-t from-background via-background/95 to-transparent" />
+      {/* Full-height gradient — bottom half is dark, top half fades to transparent */}
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 via-50% to-transparent" />
 
-      {/* Text content — pinned to bottom quarter */}
-      <div className="absolute bottom-2 sm:bottom-4 md:bottom-8 left-0 right-0 z-10 container px-4 text-center">
+      {/* Text content — pinned to the very bottom */}
+      <div className="absolute bottom-0 left-0 right-0 z-10 container px-4 text-center pb-0 sm:pb-1 md:pb-5">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl md:text-6xl font-display font-bold mb-1 md:mb-2 text-white drop-shadow-lg"
+          className="text-2xl sm:text-3xl md:text-6xl font-display font-bold mb-0.5 md:mb-2 text-white drop-shadow-lg"
         >
           {title}
         </motion.h1>
@@ -74,7 +62,7 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto drop-shadow"
+            className="text-sm sm:text-base md:text-xl text-muted-foreground max-w-2xl mx-auto drop-shadow"
           >
             {description}
           </motion.p>
