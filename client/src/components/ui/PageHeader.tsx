@@ -11,7 +11,7 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
   return (
     <div
       className="relative w-full overflow-hidden"
-      style={{ aspectRatio: "16/9", maxHeight: "520px", minHeight: "220px" }}
+      style={{ aspectRatio: "16/9", maxHeight: "520px", minHeight: "340px" }}
     >
       {/* Warm dark grid — base layer */}
       <div
@@ -26,7 +26,7 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
         }}
       />
 
-      {/* Full-bleed photo — natural centered cover, no offset */}
+      {/* Full-bleed photo — natural centered cover */}
       {image && (
         <div className="absolute inset-0">
           <img
@@ -41,21 +41,17 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
       {/* Top fade — protects navbar / logo */}
       <div className="absolute top-0 left-0 right-0 h-1/5 bg-gradient-to-b from-background/80 to-transparent" />
 
-      {/* Sharp gradient:
-         • 0–35% from bottom (bottom 35%): solid dark → text lives here
-         • 35–50%: transition to transparent
-         • 50–100%: transparent → photo visible here
-      */}
+      {/* Gradient — bottom ~25% solid dark, fade 25–40%, transparent 40–100% */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to top, hsl(var(--background) / 1) 0%, hsl(var(--background) / 1) 35%, hsl(var(--background) / 0) 50%, hsl(var(--background) / 0) 100%)",
+            "linear-gradient(to top, hsl(var(--background) / 1) 0%, hsl(var(--background) / 1) 25%, hsl(var(--background) / 0.6) 40%, hsl(var(--background) / 0) 100%)",
         }}
       />
 
-      {/* Text content — sits at ~38% from bottom, inside the solid-dark zone */}
-      <div className="absolute top-[62%] left-0 right-0 z-10 container px-4 text-center pt-1 sm:pt-2 md:pt-4">
+      {/* Text content — sits in the solid-dark zone, well above the bottom edge */}
+      <div className="absolute top-[68%] left-0 right-0 z-10 container px-4 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
