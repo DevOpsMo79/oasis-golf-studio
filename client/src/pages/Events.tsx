@@ -1,7 +1,6 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
-import interiorImg from "@assets/Entertainment_1770819759953.jpg";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function Events() {
@@ -12,8 +11,6 @@ export default function Events() {
       <PageHeader
         title={t("events", "pageTitle")}
         description={t("events", "pageDesc")}
-        image={interiorImg}
-        placeholderId={7}
       />
 
       <div className="container px-4 md:px-6 py-16">

@@ -2,7 +2,6 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { CheckCircle2, CalendarCheck, MapPin, PlayCircle, TrendingUp } from "lucide-react";
 import { IMAGE_PLACEHOLDER_MODE } from "@/lib/config";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
-import interiorImg from "@assets/swing_1770819759955.jpg";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function HowItWorks() {
@@ -20,8 +19,6 @@ export default function HowItWorks() {
       <PageHeader
         title={t("howItWorks", "pageTitle")}
         description={t("howItWorks", "pageDesc")}
-        image={interiorImg}
-        placeholderId={8}
       />
 
       <div className="container px-4 md:px-6 py-16">

@@ -1,7 +1,6 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { Check, Sparkles } from "lucide-react";
-import interiorImg from "@assets/OGS2_1770819759954.jpg";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function Memberships() {
@@ -56,8 +55,6 @@ export default function Memberships() {
       <PageHeader
         title={t("memberships", "pageTitle")}
         description={t("memberships", "pageDesc")}
-        image={interiorImg}
-        placeholderId={4}
       />
 
       <div className="container px-4 md:px-6 py-16">
