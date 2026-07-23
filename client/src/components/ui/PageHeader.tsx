@@ -12,11 +12,11 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
       {/* Banner */}
       <div
         className="relative w-full overflow-hidden page-header-banner"
-        style={{ aspectRatio: "16/9", maxHeight: "520px", minHeight: "220px" }}
+        style={{ aspectRatio: "3/2", maxHeight: "560px", minHeight: "240px" }}
       >
         <style>{`
           @media (max-width: 768px) {
-            .page-header-banner { aspect-ratio: 4/3 !important; max-height: 400px !important; }
+            .page-header-banner { aspect-ratio: 4/3 !important; max-height: 420px !important; }
           }
         `}</style>
         {image ? (
