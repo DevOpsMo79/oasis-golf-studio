@@ -91,7 +91,7 @@ export function Navbar() {
         {/* Mobile Navigation Overlay */}
         <div
           className={cn(
-            "fixed inset-0 bg-background backdrop-blur-xl z-[60] flex flex-col items-center justify-center gap-8 transition-all duration-300 lg:hidden",
+            "fixed top-[72px] left-0 right-0 bottom-0 bg-background backdrop-blur-xl z-[60] flex flex-col items-center justify-start gap-6 pt-12 pb-8 overflow-y-auto transition-all duration-300 lg:hidden",
             isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           )}
         >
