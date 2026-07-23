@@ -33,6 +33,15 @@ export function Navbar() {
     setIsOpen(false);
   }, [location]);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [isOpen]);
+
   const LangToggle = ({ className }: { className?: string }) => (
     <button
       onClick={() => setLang(lang === "en" ? "ar" : "en")}
@@ -81,7 +90,7 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="lg:hidden relative z-50 text-foreground"
+          className="lg:hidden relative z-[70] text-foreground"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
@@ -90,7 +99,7 @@ export function Navbar() {
         {/* Mobile Navigation Overlay */}
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-8 transition-all duration-300 lg:hidden",
+            "fixed inset-0 bg-background backdrop-blur-xl z-[60] flex flex-col items-center justify-center gap-8 transition-all duration-300 lg:hidden",
             isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           )}
         >
