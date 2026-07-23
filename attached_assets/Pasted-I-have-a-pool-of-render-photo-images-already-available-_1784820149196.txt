@@ -1,0 +1,47 @@
+I have a pool of render/photo images already available in the project. I need you to select the best-fit image for each hero section below, but do not implement anything yet. First present your proposed picks to me for confirmation.
+
+─────────────────────────────────────────
+
+IMAGE SELECTION CRITERIA
+─────────────────────────────────────────
+For each section, pick the image from the pool that best matches its theme:
+
+Home hero: widest, most dramatic shot of the bays or facility, ideally with depth (not a flat straight-on shot), since this is the first impression.
+Rates page hero: a bay-focused shot (open bay or VIP bay) that reads clearly as "this is what you're paying for."
+Memberships page hero: a shot that feels social or aspirational, communities/friends using the space, lounge, or a wider multi-bay view.
+Lessons/Coaching page hero: a shot showing a swing, TrackMan screen data, or a coaching moment, something that signals instruction rather than casual play.
+Club Services page hero: closest available shot to the fitting/repair area, or if none exists, a detail/equipment shot rather than a wide room shot.
+Founding Member page hero: the most premium-feeling image in the pool (VIP bay, best lighting, cleanest composition).
+
+If two images are close, prioritize the one with more negative space (plain wall, floor, or ceiling area) on the side where text will sit, since that's what prevents overlap problems.
+
+─────────────────────────────────────────
+2. CONFIRMATION CHECKPOINT — STOP HERE
+─────────────────────────────────────────
+Before touching any code, show me:
+
+Each section name
+The filename/thumbnail of the image you'd use for it
+One line on why you picked it (which criteria above it satisfies)
+
+Wait for my explicit go-ahead on each pick before implementing. If I reject a pick, I'll tell you which image to use instead or ask you to propose an alternative from the pool.
+
+─────────────────────────────────────────
+3. TEXT-SAFE ZONES AND OVERLAY HANDLING (only after confirmation)
+─────────────────────────────────────────
+Once I've confirmed the picks, for every hero image used behind text:
+
+Add a gradient overlay (dark-to-transparent, or a subtle brand-navy tint) on whichever side the text sits, strong enough to guarantee WCAG-readable contrast for both headline and subtext, but not so strong the image becomes muddy.
+Use object-fit: cover with a focal-point crop (object-position) chosen per image so the subject (bay, swing, faces) is never cut off or centered awkwardly when the viewport is resized.
+On mobile breakpoints, re-check that the same crop doesn't push the focal point off-screen. If needed, use a different object-position value at mobile widths rather than the same fixed crop as desktop.
+Never let hero text sit directly over a high-detail area of the image (screens, signage, faces). Shift the text column or resize the overlay gradient until it lands on a calmer part of the image.
+Do the same overlap check for the logo wherever it sits on top of a hero image (nav bar over hero, etc.) — logo must stay legible against the busiest possible scroll position of that image.
+
+─────────────────────────────────────────
+4. CONSISTENCY
+─────────────────────────────────────────
+Keep a consistent overlay treatment (same gradient direction, same opacity range) across all hero sections so the site doesn't feel patched together section to section, even though the underlying images differ.
+
+─────────────────────────────────────────
+
+Once implemented, send me screenshots of each hero section at both desktop and mobile width for final review.
