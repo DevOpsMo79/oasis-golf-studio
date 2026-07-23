@@ -1,6 +1,5 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import heroImg from "@assets/e03a29495a0f94a4a5147e16f5d2265c_1770299247760.jpg";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function FAQ() {
@@ -19,7 +18,6 @@ export default function FAQ() {
     <div className="min-h-screen pb-24">
       <PageHeader
         title={t("faq", "pageTitle")}
-        image={heroImg}
       />
 
       <div className="container px-4 md:px-6 py-16 max-w-3xl mx-auto">

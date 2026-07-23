@@ -2,7 +2,6 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { Video, UserCheck, TrendingUp } from "lucide-react";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
-import heroImg from "@assets/coaching_1770819759951.jpg";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function Lessons() {
@@ -22,8 +21,6 @@ export default function Lessons() {
       <PageHeader
         title={t("lessons", "pageTitle")}
         description={t("lessons", "pageDesc")}
-        image={heroImg}
-        placeholderId={6}
       />
 
       <div className="container px-4 md:px-6 py-16">
