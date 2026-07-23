@@ -30,7 +30,7 @@ export default function ClubServices() {
   return (
     <div className="min-h-screen pb-24">
       {/* Hero Banner */}
-      <div className="relative w-full aspect-video max-h-[520px] overflow-hidden bg-neutral-900">
+      <div className="relative w-full aspect-video max-h-[520px] overflow-hidden bg-neutral-900 mt-[72px]">
         <img
           src={fittingImg}
           alt="Fitting Studio"
