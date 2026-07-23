@@ -20,7 +20,7 @@ export default function Memberships() {
     },
     {
       name: "Birdie",
-      price: "1,299",
+      price: "1,399",
       descKey: "tierDescBirdie",
       features: ["featBirdieA","featBirdieB","featBirdieC","featBirdieD","featBirdieE","featBirdieF"],
       highlight: false,
@@ -30,7 +30,7 @@ export default function Memberships() {
     },
     {
       name: "Eagle",
-      price: "1,799",
+      price: "1,899",
       descKey: "tierDescEagle",
       features: ["featEagleA","featEagleB","featEagleC","featEagleD","featEagleE","featEagleF","featEagleG","featEagleH"],
       highlight: true,

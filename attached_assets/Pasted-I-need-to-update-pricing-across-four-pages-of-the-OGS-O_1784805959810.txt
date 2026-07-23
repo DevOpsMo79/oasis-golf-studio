@@ -1,0 +1,50 @@
+I need to update pricing across four pages of the OGS (Oasis Golf Studio) website to match our finalized rate card. Please update the following, keeping existing page structure, layout, and styling exactly as is, just updating the numbers and hour allowances.
+
+─────────────────────────────────────────
+
+RATES PAGE (/rates) — Bay Pricing
+─────────────────────────────────────────
+Update bay rates to:
+
+Open Bay (iO): SAR 199/hr off-peak, SAR 249/hr peak
+VIP Bay (TrackMan 4): SAR 299/hr off-peak, SAR 349/hr peak
+
+Update the peak/off-peak hours definition to:
+Peak: Friday and Saturday, all day. Sunday to Thursday, 6:00 AM to 9:00 AM and 5:00 PM to midnight.
+Off-peak: all other hours.
+
+─────────────────────────────────────────
+2. MEMBERSHIPS PAGE (/memberships) — Tier Pricing and Hours
+─────────────────────────────────────────
+Update the three membership tiers to:
+
+Par: SAR 899/month, 4 off-peak hours + 1 peak hour included. Extra hours at SAR 35/hr.
+Birdie: SAR 1,399/month, 6 off-peak hours + 2 peak hours included. Extra hours at SAR 50/hr.
+Eagle: SAR 1,899/month, 8 off-peak hours + 3 peak hours included. Extra hours at SAR 65/hr.
+
+Keep existing perks (guest passes, booking windows, F&B discounts, locker, quarterly coaching for Eagle) as currently structured, only update the price and hour figures above.
+
+─────────────────────────────────────────
+3. LESSONS PAGE (/lessons) — Coaching Rates
+─────────────────────────────────────────
+Update coaching pricing to:
+
+Assessment (45 min): SAR 199
+Adult 1:1 (60 min): SAR 349
+Junior U16 (60 min): SAR 249
+Group Clinic (per person): SAR 149
+6-Session Package: SAR 1,899
+12-Session Package: SAR 2,999
+
+─────────────────────────────────────────
+4. FOUNDING MEMBER PAGE — Correct Benefit Tier
+─────────────────────────────────────────
+The founding member benefit is currently showing Eagle-tier hours. Please correct it to Birdie-tier equivalent:
+
+8 off-peak hours/month + up to 2 peak hours/month, 4 guest passes, 14-day advance booking window, 10% F&B discount.
+
+Keep the SAR 7,999 one-time price and 25-spot cap as is, just correct the included-hours description.
+
+─────────────────────────────────────────
+
+Please confirm once done so I can review each page.

@@ -10,10 +10,11 @@ export default function Lessons() {
 
   const coachingRates = [
     { nameKey: "rate1Name", durationKey: "rate1Duration", price: "199", descKey: "rate1Desc", highlight: false },
-    { nameKey: "rate2Name", durationKey: "rate2Duration", price: "449", descKey: "rate2Desc", highlight: false },
-    { nameKey: "rate3Name", durationKey: "rate3Duration", price: "299", descKey: "rate3Desc", highlight: false },
-    { nameKey: "rate4Name", durationKey: "rate4Duration", price: "199", descKey: "rate4Desc", perPerson: true, highlight: false },
-    { nameKey: "rate5Name", durationKey: "rate5Duration", price: "1,499", descKey: "rate5Desc", highlight: true },
+    { nameKey: "rate2Name", durationKey: "rate2Duration", price: "349", descKey: "rate2Desc", highlight: false },
+    { nameKey: "rate3Name", durationKey: "rate3Duration", price: "249", descKey: "rate3Desc", highlight: false },
+    { nameKey: "rate4Name", durationKey: "rate4Duration", price: "149", descKey: "rate4Desc", perPerson: true, highlight: false },
+    { nameKey: "rate5Name", durationKey: "rate5Duration", price: "1,899", descKey: "rate5Desc", highlight: true },
+    { nameKey: "rate6Name", durationKey: "rate6Duration", price: "2,999", descKey: "rate6Desc", highlight: false },
   ] as const;
 
   return (

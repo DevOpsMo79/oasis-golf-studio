@@ -5,14 +5,13 @@ import heroImg from "@assets/swing2_1770819759956.jpg";
 import { useLanguage } from "@/hooks/use-language";
 
 export const isPeak = (dayOfWeek: number, hour: number) => {
-  if (dayOfWeek === 6) return hour >= 6 && hour < 24;
-  if (dayOfWeek === 5) return (hour >= 6 && hour < 10) || (hour >= 16 && hour < 24);
-  return (hour >= 6 && hour < 10) || (hour >= 18 && hour < 24);
+  if (dayOfWeek === 5 || dayOfWeek === 6) return true; // Friday & Saturday all day
+  return (hour >= 6 && hour < 9) || (hour >= 17 && hour < 24); // Sun–Thu 6–9 AM & 5 PM–midnight
 };
 
 export const getHourlyRate = (bayType: "open" | "vip", isPeakTime: boolean) => {
-  if (bayType === "vip") return isPeakTime ? 250 : 200;
-  return isPeakTime ? 200 : 150;
+  if (bayType === "vip") return isPeakTime ? 349 : 299;
+  return isPeakTime ? 249 : 199;
 };
 
 export default function Rates() {
@@ -34,11 +33,11 @@ export default function Rates() {
             <h3 className="text-2xl font-bold font-display text-white mb-6">{t("rates", "openBaysTitle")}</h3>
             <div className="space-y-6">
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
-                <p className="font-bold text-lg">SAR 200 {t("common", "perHour")}</p>
+                <p className="font-bold text-lg">SAR 249 {t("common", "perHour")}</p>
                 <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{t("common", "peak")}</div>
               </div>
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
-                <p className="font-bold text-lg">SAR 150 {t("common", "perHour")}</p>
+                <p className="font-bold text-lg">SAR 199 {t("common", "perHour")}</p>
                 <div className="bg-secondary text-muted-foreground px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{t("common", "offPeak")}</div>
               </div>
             </div>
@@ -57,11 +56,11 @@ export default function Rates() {
             <h3 className="text-2xl font-bold font-display text-white mb-6">{t("rates", "vipBayTitle")}</h3>
             <div className="space-y-6">
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
-                <p className="font-bold text-lg">SAR 300 {t("common", "perHour")}</p>
+                <p className="font-bold text-lg">SAR 349 {t("common", "perHour")}</p>
                 <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{t("common", "peak")}</div>
               </div>
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
-                <p className="font-bold text-lg">SAR 250 {t("common", "perHour")}</p>
+                <p className="font-bold text-lg">SAR 299 {t("common", "perHour")}</p>
                 <div className="bg-secondary text-muted-foreground px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{t("common", "offPeak")}</div>
               </div>
             </div>
