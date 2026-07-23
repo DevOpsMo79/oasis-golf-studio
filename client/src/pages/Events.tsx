@@ -1,6 +1,7 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import eventsImg from "@assets/info_1920x1080_neverlookedbetter_3_1784820112450.jpg";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function Events() {
@@ -11,6 +12,7 @@ export default function Events() {
       <PageHeader
         title={t("events", "pageTitle")}
         description={t("events", "pageDesc")}
+        image={eventsImg}
       />
 
       <div className="container px-4 md:px-6 py-16">

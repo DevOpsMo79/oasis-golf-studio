@@ -1,6 +1,8 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { Check, Sparkles } from "lucide-react";
+import baysLoungeImg from "@assets/bays-lounge_1784820112460.jpg";
+import bays3Img from "@assets/3bays_1784820112458.jpg";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function Memberships() {
@@ -55,16 +57,22 @@ export default function Memberships() {
       <PageHeader
         title={t("memberships", "pageTitle")}
         description={t("memberships", "pageDesc")}
+        image={baysLoungeImg}
       />
 
       <div className="container px-4 md:px-6 py-16">
         {/* Founding Member Banner */}
         <div
-          className="relative max-w-5xl mx-auto mb-16 rounded-3xl overflow-hidden border-2 border-primary bg-gradient-to-br from-primary/20 via-card to-background p-8 md:p-12 shadow-2xl shadow-primary/20"
+          className="relative max-w-5xl mx-auto mb-16 rounded-3xl overflow-hidden border-2 border-primary shadow-2xl shadow-primary/20"
           data-testid="banner-founding-member"
         >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-          <div className="relative flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
+          <img
+            src={bays3Img}
+            alt="Founding Member"
+            className="absolute inset-0 w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-card/90 to-background/90" />
+          <div className="relative p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider mb-4">
                 <Sparkles className="w-3.5 h-3.5" />

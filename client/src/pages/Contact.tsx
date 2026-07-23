@@ -7,6 +7,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail } from "lucide-react";
+import contactImg from "@assets/OGS2_1784820112461.jpg";
 import type { ContactInput } from "@shared/routes";
 import { useLanguage } from "@/hooks/use-language";
 
@@ -28,6 +29,7 @@ export default function Contact() {
       <PageHeader
         title={t("contact", "pageTitle")}
         description={t("contact", "pageDesc")}
+        image={contactImg}
       />
 
       <div className="container px-4 md:px-6 py-16">
