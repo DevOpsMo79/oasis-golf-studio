@@ -1,7 +1,7 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { Check, Sparkles } from "lucide-react";
-import baysLoungeImg from "@assets/bays-lounge_1784820112460.jpg";
+import baysLoungeImg from "@assets/info_1920x1080_neverlookedbetter_3_1784820112450.jpg";
 import bays3Img from "@assets/3bays_1784820112458.jpg";
 import { useLanguage } from "@/hooks/use-language";
 

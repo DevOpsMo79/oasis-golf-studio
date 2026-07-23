@@ -11,7 +11,7 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
     <>
       {/* Banner */}
       <div
-        className="relative w-full overflow-hidden page-header-banner"
+        className="relative w-full overflow-hidden page-header-banner mt-[72px]"
         style={{ aspectRatio: "3/2", maxHeight: "560px", minHeight: "240px" }}
       >
         <style>{`

@@ -1,7 +1,7 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
-import eventsImg from "@assets/info_1920x1080_neverlookedbetter_3_1784820112450.jpg";
+import eventsImg from "@assets/Family_playing_bullseye_72_dpi_1784820112454.jpg";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function Events() {
