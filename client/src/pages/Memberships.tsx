@@ -82,7 +82,7 @@ export default function Memberships() {
                 {t("memberships", "foundingTitle")}
               </h2>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
-                {t("memberships", "foundingDesc")} <span className="text-white font-bold">SAR 7,999</span> {t("memberships", "foundingDesc2")}
+                {t("memberships", "foundingDesc")}
               </p>
             </div>
             <Link href="/contact?subject=founding-member">
