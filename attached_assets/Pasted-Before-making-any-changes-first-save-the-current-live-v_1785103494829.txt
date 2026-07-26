@@ -1,0 +1,29 @@
+Before making any changes, first save the current live version as a fallback point:
+	1.	Create a git tag on the current main commit called pricing-live-v1 (or similar clear name), so we can revert to this exact version later if needed.
+	2.	Confirm the tag was created and pushed to GitHub before proceeding to any changes below.
+Once the fallback is confirmed saved, make the following changes across the site:
+─────────────────────────────────────────
+	1.	RATES PAGE
+─────────────────────────────────────────
+Replace the specific bay rate figures (Open Bay and VIP Bay, off-peak/peak) with “TBA” or “Pricing announced soon,” keep the bay names, descriptions, and peak/off-peak hour definitions as is.
+─────────────────────────────────────────
+2. MEMBERSHIPS PAGE
+─────────────────────────────────────────
+Replace the SAR figures for Par, Birdie, and Eagle tiers with “TBA,” but keep the tier names, included hours, extra-hour structure description (without the SAR rate), and perks fully visible.
+─────────────────────────────────────────
+3. LESSONS/COACHING PAGE
+─────────────────────────────────────────
+Replace all SAR figures (assessment, adult, junior, group, packages) with “TBA,” keep session names, durations, and descriptions.
+─────────────────────────────────────────
+4. FOUNDING MEMBER PAGE
+─────────────────────────────────────────
+Replace the SAR 7,999 price with “TBA” or “Pricing announced at launch.” Keep the hour allowance, guest passes, booking window, and F&B discount details visible. Keep the “25 spots” scarcity framing.
+─────────────────────────────────────────
+5. CORPORATE MEMBERSHIP CARD
+─────────────────────────────────────────
+Already says “Tailored packages available, contact us for pricing,” no change needed here.
+─────────────────────────────────────────
+6. GENERAL
+─────────────────────────────────────────
+Wherever “TBA” or “Pricing announced soon” appears, keep the existing “Register Interest” / CTA buttons fully functional, we still want to capture leads even without visible pricing.
+─────────────────────────────
