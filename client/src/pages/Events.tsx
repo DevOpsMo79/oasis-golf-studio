@@ -23,11 +23,12 @@ export default function Events() {
               <span className="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">{t("events", "competitiveLabel")}</span>
               <h2 className="text-4xl font-display font-bold mb-6">{t("events", "league1Title")}</h2>
               <p className="text-muted-foreground text-lg mb-6">{t("events", "league1Desc")}</p>
-              <ul className="space-y-2 text-muted-foreground mb-8">
+              <ul className="space-y-2 text-muted-foreground mb-6">
                 <li>{t("events", "league1Li1")}</li>
                 <li>{t("events", "league1Li2")}</li>
                 <li>{t("events", "league1Li3")}</li>
               </ul>
+              <p className="text-muted-foreground/60 text-sm italic">{t("events", "league1Note")}</p>
             </div>
             <Link href="/contact?subject=league">
               <button className="w-fit px-8 py-3 rounded-full bg-primary text-primary-foreground font-bold hover:bg-primary/90 transition-all">
