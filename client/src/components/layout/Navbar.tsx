@@ -124,8 +124,8 @@ export function Navbar() {
             href="/"
             onClick={closeMenu}
             className={cn(
-              "text-3xl font-display font-bold uppercase tracking-wider transition-colors",
-              location === "/" ? "text-primary" : "text-white hover:text-primary"
+              "text-2xl font-display font-medium tracking-wide transition-colors",
+              location === "/" ? "text-primary" : "text-foreground hover:text-primary"
             )}
           >
             {t("nav", "home")}
@@ -137,8 +137,8 @@ export function Navbar() {
               href={item.href}
               onClick={closeMenu}
               className={cn(
-                "text-2xl font-display font-bold uppercase tracking-wider transition-colors",
-                location === item.href ? "text-primary" : "text-white/90 hover:text-primary"
+                "text-2xl font-display font-medium tracking-wide transition-colors",
+                location === item.href ? "text-primary" : "text-foreground hover:text-primary"
               )}
             >
               {item.label}
