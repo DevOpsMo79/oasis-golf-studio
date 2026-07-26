@@ -1,0 +1,21 @@
+On mobile, the current hamburger menu opens into a small scrollable band and not all menu items are visible at once. The user has to scroll inside a confined black strip to find items lower in the list, which is easy to miss entirely.
+Please fix this by converting the mobile menu into a full-screen overlay, similar to how Five Iron Golf’s mobile site does it (attached screenshot for reference, structure only, not the branding or content):
+─────────────────────────────────────────
+	1.	FULL-SCREEN OVERLAY BEHAVIOR
+─────────────────────────────────────────
+	•	When the hamburger icon is tapped, the menu should expand to cover the entire viewport (100vh), not a small band.
+	•	All top-level menu items (Home, Book a Sim, Memberships, Lessons, Club Services, Founding Member, About Us, Contact Us, Food & Beverage, etc., whatever our current nav items are) should be visible without needing to scroll, stacked vertically with generous spacing.
+	•	If we have too many items to fit without scrolling even at full height, prioritize by putting the highest-intent items (Book a Sim, Memberships, Rates) at the top, and let only the overlay itself scroll internally as a fallback, not a cramped nested band.
+─────────────────────────────────────────
+2. CLOSE AND NAVIGATION
+─────────////────────────────────────────
+	•	Add a clear X icon top-left (or top-right, match our current placement) to close the overlay.
+	•	Tapping any menu item should navigate to that page and automatically close the overlay.
+	•	Background page content should not be scrollable while the overlay is open (lock body scroll).
+─────────────────────────────────────────
+3. STYLING
+─────────────────────────────────────────
+	•	Keep our existing color palette and font (dark background, bold white uppercase links is fine if it already matches our style, otherwise use our current nav styling).
+	•	Sub-items (like Food & Beverage’s expandable section, if we have one) can use a “+” expand pattern like the reference screenshot, tap to reveal nested links inline rather than navigating to a new screen.
+─────────────────────────────────────────
+Please test this on a real mobile viewport (not just resized desktop browser) before confirming, since overlay height and scroll-lock bugs often only show up on actual mobile Safari/Chrome.
