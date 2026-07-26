@@ -41,10 +41,9 @@ export default function Memberships() {
     },
     {
       name: "Corporate",
-      price: "From SAR 4,500",
       descKey: "tierDescCorporate",
       noteKey: "tierNoteCorporate",
-      features: ["featCorpA","featCorpB","featCorpC","featCorpD","featCorpE","featCorpF","featCorpG","featCorpH"],
+      features: ["featCorpA","featCorpB","featCorpC","featCorpD","featCorpE","featCorpF"],
       highlight: false,
       corporate: true,
       ctaKey: "contactUs",
@@ -126,21 +125,23 @@ export default function Memberships() {
                 )}
               </div>
 
-              <div className="mb-6">
-                <div className="flex items-baseline gap-1 flex-wrap">
-                  {tier.corporate ? (
-                    <>
-                      <span className="text-3xl font-bold">{tier.price}</span>
-                      <span className="text-muted-foreground">{t("common", "perMonth")}</span>
-                    </>
-                  ) : (
-                    <>
-                      <span className="text-4xl font-bold">SAR {tier.price}</span>
-                      <span className="text-muted-foreground">{t("common", "perMonth")}</span>
-                    </>
-                  )}
+              {tier.price && (
+                <div className="mb-6">
+                  <div className="flex items-baseline gap-1 flex-wrap">
+                    {tier.corporate ? (
+                      <>
+                        <span className="text-3xl font-bold">{tier.price}</span>
+                        <span className="text-muted-foreground">{t("common", "perMonth")}</span>
+                      </>
+                    ) : (
+                      <>
+                        <span className="text-4xl font-bold">SAR {tier.price}</span>
+                        <span className="text-muted-foreground">{t("common", "perMonth")}</span>
+                      </>
+                    )}
+                  </div>
                 </div>
-              </div>
+              )}
 
               <ul className="space-y-3 mb-8 flex-1">
                 {tier.features.map((fKey) => (
