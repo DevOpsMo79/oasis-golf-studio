@@ -34,7 +34,7 @@ export default function ClubServices() {
         <img
           src={fittingImg}
           alt="Fitting Studio"
-          className="w-full h-full object-cover"
+          className="club-services-hero-image w-full h-full object-cover"
         />
         <div className="absolute top-0 left-0 right-0 h-1/5 bg-gradient-to-b from-background/80 to-transparent" />
       </div>

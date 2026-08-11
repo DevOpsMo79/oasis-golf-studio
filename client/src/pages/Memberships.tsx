@@ -1,6 +1,7 @@
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { Check, Sparkles } from "lucide-react";
+import type { CSSProperties } from "react";
 import baysLoungeImg from "@assets/info_1920x1080_neverlookedbetter_3_1784820112450.jpg";
 import bays3Img from "@assets/3bays_1784820112458.jpg";
 import { useLanguage } from "@/hooks/use-language";
@@ -57,6 +58,7 @@ export default function Memberships() {
         title={t("memberships", "pageTitle")}
         description={t("memberships", "pageDesc")}
         image={baysLoungeImg}
+        desktopObjectPosition="center 24%"
       />
 
       <div className="container px-4 md:px-6 py-16">
@@ -68,7 +70,10 @@ export default function Memberships() {
           <img
             src={bays3Img}
             alt="Founding Member"
-            className="absolute inset-0 w-full h-full object-cover opacity-30"
+            className="founding-member-image absolute inset-0 w-full h-full object-cover opacity-30"
+            style={{
+              "--desktop-object-position": "center 18%",
+            } as CSSProperties}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-card/90 to-background/90" />
           <div className="relative p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">

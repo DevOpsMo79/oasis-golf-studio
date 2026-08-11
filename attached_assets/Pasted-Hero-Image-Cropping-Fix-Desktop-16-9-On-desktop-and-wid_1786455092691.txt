@@ -1,0 +1,31 @@
+Hero Image Cropping Fix — Desktop/16:9)
+
+On desktop and wide monitor viewports (16:9 and similar wide aspect ratios), all hero section images are being cropped from the top, cutting off part of the subject (ceiling, upper portion of the shot, sometimes logos/signage in-frame). Mobile rendering is correct and should not be changed.
+
+Please fix this as follows, for every hero section across the site (Home, Rates, Memberships, Lessons, Club Services, Founding Member):
+
+─────────────────────────────────────────
+
+DIAGNOSE THE CURRENT CROP LOGIC
+─────────────────────────────────────────
+Check the current CSS for each hero image: likely using object-fit: cover with a single fixed object-position (e.g., object-position: center top or a fixed percentage) that was tuned for mobile portrait and doesn't hold up at wide desktop ratios.
+
+─────────────────────────────────────────
+2. SET DIFFERENT OBJECT-POSITION VALUES PER BREAKPOINT
+─────────────────────────────────────────
+Rather than one fixed object-position for all screen sizes, set distinct values per breakpoint:
+
+Mobile (portrait, current working state): keep exactly as is, don't touch.
+Tablet/medium: verify it still looks correct, adjust only if needed.
+Desktop/wide (16:9 and similar, roughly 1280px+ width): adjust object-position so the full subject is visible, most likely shifting from "top" toward "center" or a specific percentage (e.g., object-position: center 30%) so the crop doesn't clip the top of the frame.
+
+Test each hero image individually since they may need slightly different object-position values depending on where the subject sits in that specific image, don't assume one universal fix works for all of them.
+
+─────────────────────────────────────────
+3. VERIFY ACROSS COMMON WIDE RATIOS
+─────────────────────────────────────────
+Check rendering at standard desktop breakpoints (1280px, 1440px, 1920px wide) to confirm the fix holds across typical monitor sizes, not just one specific resolution.
+
+─────────────────────────────────────────
+
+Once done, send screenshots of each hero section at both a standard 16:9 desktop width and mobile, so I can compare and confirm nothing regressed on mobile while fixing desktop.

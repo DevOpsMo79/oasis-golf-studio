@@ -16,7 +16,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="relative w-full md:aspect-video z-0">
-          <img src={heroImg} alt="Golf Simulator" className="w-full h-auto md:h-full object-contain md:object-cover max-h-screen" />
+          <img src={heroImg} alt="Golf Simulator" className="home-hero-image w-full h-auto md:h-full object-contain md:object-cover max-h-screen" />
           <div className={`absolute inset-0 bg-background/30 ${lang === "ar" ? "bg-gradient-to-l" : "bg-gradient-to-r"} from-background via-background/40 to-transparent`} />
         </div>
 

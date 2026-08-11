@@ -23,6 +23,7 @@ export default function Rates() {
         title={t("rates", "pageTitle")}
         description={t("rates", "pageDesc")}
         image={simImg}
+        desktopObjectPosition="center 20%"
       />
 
       <div className="container px-4 md:px-6 mt-8 md:mt-12 relative z-10">

@@ -23,6 +23,7 @@ export default function Lessons() {
         title={t("lessons", "pageTitle")}
         description={t("lessons", "pageDesc")}
         image={coachingImg}
+        desktopObjectPosition="center 24%"
       />
 
       <div className="container px-4 md:px-6 py-16">

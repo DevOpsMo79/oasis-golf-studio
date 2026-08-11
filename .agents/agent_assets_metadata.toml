@@ -263,3 +263,45 @@ uri = "file://screenshots/founding-member-pricing-tba.jpg"
 type = "image"
 title = "Founding Member — pricing TBA"
 description = "Founding Member pricing is announced at launch while the 25-spot limit, included benefits, and CTA remain visible."
+
+[[outputs]]
+id = "nH0McgKL-K_gG2_-GRF4a"
+uri = "file://screenshots/hero-after-home-desktop-1280.jpg"
+type = "image"
+title = "Home hero — desktop 1280px"
+description = "Desktop hero after the crop fix; upper scene remains visible."
+
+[[outputs]]
+id = "mLk95_Qy7WdIJeG9IJzcs"
+uri = "file://screenshots/hero-after-rates-desktop-1280.jpg"
+type = "image"
+title = "Rates hero — desktop 1280px"
+description = "Desktop Rates hero after the crop fix; ceiling and upper simulator frame are visible."
+
+[[outputs]]
+id = "squskktzYxUF9WJlfjhrJ"
+uri = "file://screenshots/hero-after-memberships-desktop-1280.jpg"
+type = "image"
+title = "Memberships hero — desktop 1280px"
+description = "Desktop Memberships hero after the crop fix; upper ceiling and signage are preserved."
+
+[[outputs]]
+id = "KHskRtUYi2eZXh1_KR4hp"
+uri = "file://screenshots/hero-after-lessons-desktop-1280.jpg"
+type = "image"
+title = "Lessons hero — desktop 1280px"
+description = "Desktop Lessons hero after the crop fix; the golfer and overhead lights remain in frame."
+
+[[outputs]]
+id = "jF0d3Jat-wIqtZbBD_zYV"
+uri = "file://screenshots/hero-after-club-services-desktop-1280.jpg"
+type = "image"
+title = "Club Services hero — desktop 1280px"
+description = "Desktop Club Services hero after the crop fix; the upper hand and club head remain visible."
+
+[[outputs]]
+id = "Z1hvqrzUVsRQ71UE4V3JB"
+uri = "file://screenshots/hero-after-founding-member-banner-desktop-1280.jpg"
+type = "image"
+title = "Founding Member banner — desktop 1280px"
+description = "Dedicated Founding Member banner capture after the crop fix."

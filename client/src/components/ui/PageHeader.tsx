@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
+import type { CSSProperties } from "react";
 
 interface PageHeaderProps {
   title: string;
   description?: string;
   image?: string;
+  desktopObjectPosition?: string;
 }
 
-export function PageHeader({ title, description, image }: PageHeaderProps) {
+export function PageHeader({ title, description, image, desktopObjectPosition = "center 30%" }: PageHeaderProps) {
   return (
     <>
       {/* Banner */}
@@ -23,8 +25,11 @@ export function PageHeader({ title, description, image }: PageHeaderProps) {
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-cover"
-            style={{ imageRendering: "auto" }}
+            className="page-header-image w-full h-full object-cover"
+            style={{
+              imageRendering: "auto",
+              "--desktop-object-position": desktopObjectPosition,
+            } as CSSProperties}
           />
         ) : (
           <>

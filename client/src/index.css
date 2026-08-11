@@ -98,3 +98,26 @@
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
   }
 }
+
+/* Keep the existing mobile crop while revealing more of each hero's upper frame on wide desktop. */
+.page-header-image,
+.home-hero-image,
+.club-services-hero-image,
+.founding-member-image {
+  object-position: center;
+}
+
+@media (min-width: 1280px) {
+  .page-header-image,
+  .founding-member-image {
+    object-position: var(--desktop-object-position, center 30%);
+  }
+
+  .home-hero-image {
+    object-position: center 30%;
+  }
+
+  .club-services-hero-image {
+    object-position: center 18%;
+  }
+}
