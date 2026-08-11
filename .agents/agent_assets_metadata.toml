@@ -228,3 +228,10 @@ id = "sBKH6PztIlNW99tPwcag3"
 uri = "file://ogs-screenshots.zip"
 type = "unspecified"
 title = "OGS Website Screenshots (29 images)"
+
+[[outputs]]
+id = "Gikxfp1MHC9hgYa8GezpB"
+uri = "file://screenshots/memberships-cards-review.jpg"
+type = "image"
+title = "Membership cards — pricing fix"
+description = "All three membership cards showing the corrected extra-hour discount lines."
