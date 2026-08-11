@@ -235,3 +235,31 @@ uri = "file://screenshots/memberships-cards-review.jpg"
 type = "image"
 title = "Membership cards — pricing fix"
 description = "All three membership cards showing the corrected extra-hour discount lines."
+
+[[outputs]]
+id = "t6L0CWQSX2Gjb1zZ99XS5"
+uri = "file://screenshots/rates-pricing-tba.jpg"
+type = "image"
+title = "Rates page — pricing TBA"
+description = "Open Bay and VIP Bay show TBA for peak and off-peak rates; hour definitions and Register Interest CTAs remain visible."
+
+[[outputs]]
+id = "k7Ffr7rd1To6jxhp2Dxbs"
+uri = "file://screenshots/memberships-pricing-tba.jpg"
+type = "image"
+title = "Memberships — pricing TBA"
+description = "Par, Birdie, and Eagle show TBA while included hours, perks, and Register Interest CTAs remain visible."
+
+[[outputs]]
+id = "i8AiXwT8qikxLn8cYbZ1V"
+uri = "file://screenshots/lessons-pricing-tba.jpg"
+type = "image"
+title = "Lessons and coaching — pricing TBA"
+description = "All six coaching options show TBA while names, durations, descriptions, and booking CTAs remain visible."
+
+[[outputs]]
+id = "X1-42XXHELpMmWQSK2mKC"
+uri = "file://screenshots/founding-member-pricing-tba.jpg"
+type = "image"
+title = "Founding Member — pricing TBA"
+description = "Founding Member pricing is announced at launch while the 25-spot limit, included benefits, and CTA remain visible."

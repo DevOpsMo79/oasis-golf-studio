@@ -1,0 +1,49 @@
+Remove All Pricing Site-Wide (HOLD — DO NOT SEND UNTIL PRE-LAUNCH DECISION IS MADE)
+
+⚠️ DO NOT send this prompt to Replit yet. This is saved here so it's ready to go the moment we decide to initiate the pricing blackout ahead of pre-launch. Confirm with Mo before sending.
+
+Before making any changes, first confirm that a fallback tag already exists (pre-pricing-fix or a more recent tag) representing the last known-good pricing state. If not, create one called pricing-live-final and push it before proceeding, so we can always restore full pricing later.
+
+Once the fallback is confirmed, make the following changes across the site:
+
+─────────────────────────────────────────
+
+1. RATES PAGE
+
+───────────────────────────────────────── Replace the specific bay rate figures (Open Bay and VIP Bay, off-peak/peak) with "TBA" or "Pricing announced soon." Keep bay names, descriptions, and peak/off-peak hour definitions as is.
+
+─────────────────────────────────────────
+
+2. MEMBERSHIPS PAGE
+
+───────────────────────────────────────── Replace the SAR figures for Par, Birdie, and Eagle tiers (monthly price and the "SAR X off extra hours" line) with "TBA." Keep tier names, included hours, and all other perks fully visible.
+
+─────────────────────────────────────────
+
+3. LESSONS/COACHING PAGE
+
+───────────────────────────────────────── Replace all SAR figures (assessment, adult, junior, group, packages) with "TBA." Keep session names, durations, and descriptions.
+
+─────────────────────────────────────────
+
+4. FOUNDING MEMBER PAGE
+
+───────────────────────────────────────── Replace the SAR 7,999 price with "TBA" or "Pricing announced at launch." Keep the hour allowance, guest passes, booking window, F&B discount, and "25 spots" scarcity framing visible.
+
+─────────────────────────────────────────
+
+5. CORPORATE MEMBERSHIP CARD
+
+───────────────────────────────────────── Already says "Tailored packages available, contact us for pricing." No change needed.
+
+─────────────────────────────────────────
+
+6. GENERAL
+
+───────────────────────────────────────── Wherever "TBA" or "Pricing announced soon" appears, keep all "Register Interest" / CTA buttons fully functional. We still want to capture leads even without visible pricing.
+
+─────────────────────────────────────────
+
+7. CONFIRM AND REPORT
+
+───────────────────────────────────────── Confirm the fallback tag before starting. Send screenshots of each updated page once done. Do not delete or overwrite the fallback tag, we will use it to restore full pricing once we're ready to launch publicly.

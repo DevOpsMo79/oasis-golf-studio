@@ -9,12 +9,12 @@ export default function Lessons() {
   const { t } = useLanguage();
 
   const coachingRates = [
-    { nameKey: "rate1Name", durationKey: "rate1Duration", price: "199", descKey: "rate1Desc", highlight: false },
-    { nameKey: "rate2Name", durationKey: "rate2Duration", price: "349", descKey: "rate2Desc", highlight: false },
-    { nameKey: "rate3Name", durationKey: "rate3Duration", price: "249", descKey: "rate3Desc", highlight: false },
-    { nameKey: "rate4Name", durationKey: "rate4Duration", price: "149", descKey: "rate4Desc", perPerson: true, highlight: false },
-    { nameKey: "rate5Name", durationKey: "rate5Duration", price: "1,899", descKey: "rate5Desc", highlight: true },
-    { nameKey: "rate6Name", durationKey: "rate6Duration", price: "2,999", descKey: "rate6Desc", highlight: false },
+    { nameKey: "rate1Name", durationKey: "rate1Duration", price: "TBA", descKey: "rate1Desc", highlight: false },
+    { nameKey: "rate2Name", durationKey: "rate2Duration", price: "TBA", descKey: "rate2Desc", highlight: false },
+    { nameKey: "rate3Name", durationKey: "rate3Duration", price: "TBA", descKey: "rate3Desc", highlight: false },
+    { nameKey: "rate4Name", durationKey: "rate4Duration", price: "TBA", descKey: "rate4Desc", perPerson: true, highlight: false },
+    { nameKey: "rate5Name", durationKey: "rate5Duration", price: "TBA", descKey: "rate5Desc", highlight: true },
+    { nameKey: "rate6Name", durationKey: "rate6Duration", price: "TBA", descKey: "rate6Desc", highlight: false },
   ] as const;
 
   return (
@@ -85,7 +85,7 @@ export default function Lessons() {
               <h3 className="text-xl font-bold mb-1">{t("lessons", rate.nameKey)}</h3>
               <p className="text-xs text-muted-foreground uppercase tracking-wider mb-4">{t("lessons", rate.durationKey)}</p>
               <div className="mb-4 flex items-baseline gap-2">
-                <span className="text-3xl font-bold">SAR {rate.price}</span>
+                <span className="text-3xl font-bold">{rate.price}</span>
                 {"perPerson" in rate && rate.perPerson && (
                   <span className="text-muted-foreground text-sm">{t("common", "perPerson")}</span>
                 )}

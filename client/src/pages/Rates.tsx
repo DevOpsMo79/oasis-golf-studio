@@ -32,11 +32,11 @@ export default function Rates() {
             <h3 className="text-2xl font-bold font-display text-white mb-6">{t("rates", "openBaysTitle")}</h3>
             <div className="space-y-6">
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
-                <p className="font-bold text-lg">SAR 249 {t("common", "perHour")}</p>
+                <p className="font-bold text-lg">TBA {t("common", "perHour")}</p>
                 <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{t("common", "peak")}</div>
               </div>
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
-                <p className="font-bold text-lg">SAR 199 {t("common", "perHour")}</p>
+                <p className="font-bold text-lg">TBA {t("common", "perHour")}</p>
                 <div className="bg-secondary text-muted-foreground px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{t("common", "offPeak")}</div>
               </div>
             </div>
@@ -55,11 +55,11 @@ export default function Rates() {
             <h3 className="text-2xl font-bold font-display text-white mb-6">{t("rates", "vipBayTitle")}</h3>
             <div className="space-y-6">
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
-                <p className="font-bold text-lg">SAR 349 {t("common", "perHour")}</p>
+                <p className="font-bold text-lg">TBA {t("common", "perHour")}</p>
                 <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{t("common", "peak")}</div>
               </div>
               <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-white/5">
-                <p className="font-bold text-lg">SAR 299 {t("common", "perHour")}</p>
+                <p className="font-bold text-lg">TBA {t("common", "perHour")}</p>
                 <div className="bg-secondary text-muted-foreground px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{t("common", "offPeak")}</div>
               </div>
             </div>

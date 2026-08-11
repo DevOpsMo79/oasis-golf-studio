@@ -11,7 +11,7 @@ export default function Memberships() {
   const tiers = [
     {
       name: "Par",
-      price: "899",
+      price: "TBA",
       descKey: "tierDescPar",
       features: ["featParA","featParB","featParC","featParD","featParE"],
       highlight: false,
@@ -21,7 +21,7 @@ export default function Memberships() {
     },
     {
       name: "Birdie",
-      price: "1,399",
+      price: "TBA",
       descKey: "tierDescBirdie",
       features: ["featBirdieA","featBirdieB","featBirdieC","featBirdieD","featBirdieE","featBirdieF"],
       highlight: false,
@@ -31,7 +31,7 @@ export default function Memberships() {
     },
     {
       name: "Eagle",
-      price: "1,899",
+      price: "TBA",
       descKey: "tierDescEagle",
       features: ["featEagleA","featEagleB","featEagleC","featEagleD","featEagleE","featEagleF","featEagleG","featEagleH"],
       highlight: true,
@@ -135,7 +135,7 @@ export default function Memberships() {
                       </>
                     ) : (
                       <>
-                        <span className="text-4xl font-bold">SAR {tier.price}</span>
+                        <span className="text-4xl font-bold">{tier.price}</span>
                         <span className="text-muted-foreground">{t("common", "perMonth")}</span>
                       </>
                     )}
